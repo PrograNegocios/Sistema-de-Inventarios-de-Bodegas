@@ -1,0 +1,134 @@
+c:\users\cristhianrene\documents\visual studio 2015\Projects\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.exe.config
+c:\users\cristhianrene\documents\visual studio 2015\Projects\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.vbprojResolveAssemblyReference.cache
+c:\users\cristhianrene\documents\visual studio 2015\Projects\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Login_Form.resources
+c:\users\cristhianrene\documents\visual studio 2015\Projects\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Resources.resources
+c:\users\cristhianrene\documents\visual studio 2015\Projects\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.vbproj.GenerateResource.Cache
+c:\users\cristhianrene\documents\visual studio 2015\Projects\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.xml
+C:\Users\CristhianRene\documents\visual studio 2015\Projects\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.exe
+C:\Users\CristhianRene\documents\visual studio 2015\Projects\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.pdb
+C:\Users\CristhianRene\documents\visual studio 2015\Projects\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.xml
+C:\Users\CristhianRene\documents\visual studio 2015\Projects\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.exe
+C:\Users\CristhianRene\documents\visual studio 2015\Projects\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.pdb
+C:\Users\CristhianRene\documents\visual studio 2015\Projects\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Menu_Form.resources
+C:\Users\CristhianRene\documents\visual studio 2015\Projects\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Producto_Form.resources
+C:\Users\CristhianRene\Documents\Visual Studio 2015\Projects\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Inventario_Form.resources
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.exe.config
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.exe
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.xml
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.pdb
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.exe
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.pdb
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.xml
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.vbprojResolveAssemblyReference.cache
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Inventario_Form.resources
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Login_Form.resources
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Menu_Form.resources
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Resources.resources
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Producto_Form.resources
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.vbproj.GenerateResource.Cache
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.exe.config
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.exe
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.xml
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.pdb
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3 - copia\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.exe.config
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.exe
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.xml
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.pdb
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3 - copia\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.exe
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3 - copia\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.pdb
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3 - copia\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.xml
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.vbprojResolveAssemblyReference.cache
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Inventario_Form.resources
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Login_Form.resources
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Menu_Form.resources
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Resources.resources
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Producto_Form.resources
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.vbproj.GenerateResource.Cache
+C:\Users\Erick\Desktop\Progra de negocios\Sistema de Inventario de Bodegas3 - copia\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.exe.config
+C:\Users\Erick\Desktop\Progra de negocios\Sistema de Inventario de Bodegas3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.exe
+C:\Users\Erick\Desktop\Progra de negocios\Sistema de Inventario de Bodegas3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.xml
+C:\Users\Erick\Desktop\Progra de negocios\Sistema de Inventario de Bodegas3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.pdb
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.exe.config
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.exe
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.xml
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.pdb
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.exe
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.pdb
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.xml
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.vbprojResolveAssemblyReference.cache
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Inventario_Form.resources
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Login_Form.resources
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Menu_Form.resources
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Resources.resources
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Producto_Form.resources
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.vbproj.GenerateResource.Cache
+C:\Users\Erick\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Bodega_Form.resources
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.exe.config
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.exe
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.xml
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.pdb
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.exe
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.pdb
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.xml
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.vbprojResolveAssemblyReference.cache
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Bodega_Form.resources
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Inventario_Form.resources
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Login_Form.resources
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Menu_Form.resources
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Resources.resources
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Producto_Form.resources
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.vbproj.GenerateResource.Cache
+C:\Users\Miguel Moreno\Downloads\Sistema de Inventario de Bodegas3.2\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.exe.config
+C:\Users\Miguel Moreno\Downloads\Sistema de Inventario de Bodegas3.2\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.exe
+C:\Users\Miguel Moreno\Downloads\Sistema de Inventario de Bodegas3.2\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.xml
+C:\Users\Miguel Moreno\Downloads\Sistema de Inventario de Bodegas3.2\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.pdb
+C:\Users\Miguel Moreno\Downloads\Sistema de Inventario de Bodegas3.2\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.exe
+C:\Users\Miguel Moreno\Downloads\Sistema de Inventario de Bodegas3.2\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.pdb
+C:\Users\Miguel Moreno\Downloads\Sistema de Inventario de Bodegas3.2\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.xml
+C:\Users\Miguel Moreno\Downloads\Sistema de Inventario de Bodegas3.2\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.vbprojResolveAssemblyReference.cache
+C:\Users\Miguel Moreno\Downloads\Sistema de Inventario de Bodegas3.2\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Bodega_Form.resources
+C:\Users\Miguel Moreno\Downloads\Sistema de Inventario de Bodegas3.2\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Inventario_Form.resources
+C:\Users\Miguel Moreno\Downloads\Sistema de Inventario de Bodegas3.2\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Login_Form.resources
+C:\Users\Miguel Moreno\Downloads\Sistema de Inventario de Bodegas3.2\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Menu_Form.resources
+C:\Users\Miguel Moreno\Downloads\Sistema de Inventario de Bodegas3.2\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Resources.resources
+C:\Users\Miguel Moreno\Downloads\Sistema de Inventario de Bodegas3.2\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Producto_Form.resources
+C:\Users\Miguel Moreno\Downloads\Sistema de Inventario de Bodegas3.2\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.vbproj.GenerateResource.Cache
+C:\Users\Miguel Moreno\Downloads\Sistema de Inventario de Bodegas3.2\Sistema de Inventario de Bodegas3.2 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Requisicion.resources
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.exe.config
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.exe
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.xml
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.pdb
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.exe
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.pdb
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.xml
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.vbprojResolveAssemblyReference.cache
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Bodega_Form.resources
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Inventario_Form.resources
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Login_Form.resources
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Menu_Form.resources
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Resources.resources
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Producto_Form.resources
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Requisicion.resources
+C:\Users\CristhianRene\Desktop\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.vbproj.GenerateResource.Cache
+D:\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.exe.config
+D:\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.exe
+D:\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.xml
+D:\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.pdb
+C:\Users\Marilyn Alvarado\GitHub\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.exe.config
+C:\Users\Marilyn Alvarado\GitHub\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.exe
+C:\Users\Marilyn Alvarado\GitHub\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.xml
+C:\Users\Marilyn Alvarado\GitHub\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.pdb
+C:\Users\Marilyn Alvarado\GitHub\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.exe
+C:\Users\Marilyn Alvarado\GitHub\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.pdb
+C:\Users\Marilyn Alvarado\GitHub\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\bin\Debug\Sistema de Inventario de Bodegas.xml
+C:\Users\Marilyn Alvarado\GitHub\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.vbprojResolveAssemblyReference.cache
+C:\Users\Marilyn Alvarado\GitHub\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Bodega_Form.resources
+C:\Users\Marilyn Alvarado\GitHub\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Inventario_Form.resources
+C:\Users\Marilyn Alvarado\GitHub\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Login_Form.resources
+C:\Users\Marilyn Alvarado\GitHub\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Menu_Form.resources
+C:\Users\Marilyn Alvarado\GitHub\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Resources.resources
+C:\Users\Marilyn Alvarado\GitHub\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Producto_Form.resources
+C:\Users\Marilyn Alvarado\GitHub\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Requisicion.resources
+C:\Users\Marilyn Alvarado\GitHub\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema de Inventario de Bodegas.vbproj.GenerateResource.Cache
+C:\Users\Marilyn Alvarado\GitHub\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.Departamento_Form.resources
+C:\Users\Marilyn Alvarado\GitHub\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas3.3 - copia\Sistema de Inventario de Bodegas\obj\Debug\Sistema_de_Inventario_de_Bodegas.DetalleSalida_Form.resources

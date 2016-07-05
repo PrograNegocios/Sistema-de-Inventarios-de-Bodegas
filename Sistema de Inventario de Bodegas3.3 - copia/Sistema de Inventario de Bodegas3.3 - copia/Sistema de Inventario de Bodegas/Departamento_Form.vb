@@ -13,7 +13,25 @@ Public Class Departamento_Form
         con.ConnectionString = My.Settings.Inventario_de_Bodegas_UNICAHConnectionString
         con.Open()
     End Sub
+    Private Sub autogenerate_id()
+        Try
 
+            cmd = New SqlCommand("SELECT MAX(IdDepartamento)FROM Departamento", con)
+            Dim dr As SqlDataReader = cmd.ExecuteReader
+            If dr.Read = True Then
+                Me.IdDepartamentoTextBox.Text = dr.Item(0) + 1
+                DeptoDataGridView.Item(0, DeptoDataGridView.CurrentRow.Index).Value = IdDepartamentoTextBox.Text
+            Else
+                Exit Sub
+
+            End If
+            'dr.Close()
+            'con.Close()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+    End Sub
     Private Sub Agregar_Button_Depto_Click(sender As Object, e As EventArgs) Handles Agregar_Button_Depto.Click
         DepartamentoBindingSource.AddNew()
         Agregar_Button_Depto.Enabled = False
@@ -27,7 +45,7 @@ Public Class Departamento_Form
         IdDepartamentoTextBox.Enabled = True
         NombreTextBox.Enabled = True
         EncargadoTextBox.Enabled = True
-
+        autogenerate_id()
         'DeptoDataGridView.Enabled = True
     End Sub
 

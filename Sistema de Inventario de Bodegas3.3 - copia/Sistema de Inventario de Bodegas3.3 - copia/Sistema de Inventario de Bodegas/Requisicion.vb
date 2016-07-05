@@ -6,6 +6,7 @@ Imports System.Linq
 Public Class Requisicion
     Public con As New SqlConnection
     Public cmd As New SqlCommand
+
     Private Sub Requisicion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         'TODO: esta línea de código carga datos en la tabla 'Inventario_de_Bodega_UNICAHDataSet3.sub_departamentos_sel' Puede moverla o quitarla según sea necesario.
@@ -22,37 +23,26 @@ Public Class Requisicion
         con.ConnectionString = My.Settings.Inventario_de_Bodegas_UNICAHConnectionString
         con.Open()
 
-
-        'Me.BindingContext(DsAuthors1, "authors").Position -= 1
-        'ShowPosition()
     End Sub
-    'Public Function ultimoId() As Integer
-    '    Dim resultado As Integer
-    '    Dim query As String = "SELECT MAX(IdRequisición)FROM Requisición"
-    '    Dim comando As SqlCommand
-    '    'Dim lector As SqlDataReader
-    '    'con.Open()
-    '    comando = New SqlCommand(query, con)
-    '    'lector = comando.ExecuteReader
-    '    'If lector.Read Then
-    '    '    resultado = CInt(lector(0).ToString)
-    '    'End If
-    '    'lector.Close()
-    '    con.Close()
-    '    Return resultado
-    'End Function
+    Private Sub autogenerate_id()
+        Try
 
-    'Private Sub ShowPosition()
-    '    Dim iCnt As Integer
-    '    Dim iPos As Integer
-    '    iCnt = Me.BindingContext(DsAuthors1, "authors").Count
-    '    If iCnt = 0 Then
-    '        txtPosition.Text = "(No records)"
-    '    Else
-    '        iPos = Me.BindingContext(DsAuthors1, "authors").Position + 1
-    '        txtPosition.Text = iPos.ToString & " of " & iCnt.ToString
-    '    End If
-    'End Sub
+            cmd = New SqlCommand("SELECT MAX(IdRequisición)FROM Requisición", con)
+            Dim dr As SqlDataReader = cmd.ExecuteReader
+            If dr.Read = True Then
+                Me.IdRequisiciónTextBox.Text = dr.Item(0) + 1
+                RequisiciónDataGridView.Item(0, RequisiciónDataGridView.CurrentRow.Index).Value = IdRequisiciónTextBox.Text
+            Else
+                Exit Sub
+
+            End If
+            'dr.Close()
+            'con.Close()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+    End Sub
     Private Sub Cancelar_Operacion_Click(sender As Object, e As EventArgs)
 
     End Sub
@@ -75,9 +65,10 @@ Public Class Requisicion
         ObservaciónTextBox.Enabled = True
         NombreProductoComboBox.Enabled = True
         CantidadTextBox.Enabled = True
-        'RequisicionDataGridView.Enabled = True
+        ' RequisiciónDataGridView.Enabled = True
         FechaDateTimePicker.Text = Date.Today 'Importante para q quede la fecha actual
 
+        autogenerate_id()
 
     End Sub
 
@@ -92,7 +83,7 @@ Public Class Requisicion
             Me.Validate()
             RequisicionBindingSource.RemoveCurrent()
             MsgBox("Los datos se eliminaron correctamente", vbExclamation)
-            RequisicionDataGridView.Refresh()
+            RequisiciónDataGridView.Refresh()
             Me.TableAdapterManager.UpdateAll(Me._Inv_Bodegas_DataSet)
 
         End If
@@ -112,7 +103,7 @@ Public Class Requisicion
         ElseIf CantidadTextBox.Text = Nothing Then
             MsgBox("El Campo Cantidad no Puede quedar Vacio", vbInformation)
 
-        ElseIf (RequisicionDataGridView.Rows.Count > 0) Then
+        ElseIf (RequisiciónDataGridView.Rows.Count > 0) Then
             If (FechaDateTimePicker.Checked = True) Then
                 If (FechaDateTimePicker.Value <= date1) Then
                     MsgBox("Los datos se guardaron exitosamente", vbInformation)
@@ -120,7 +111,7 @@ Public Class Requisicion
                     Me.Validate()
                     Me.RequisicionBindingSource.EndEdit()
                     Me.TableAdapterManager.UpdateAll(Me._Inv_Bodegas_DataSet)
-                    RequisicionDataGridView.Refresh()
+                    RequisiciónDataGridView.Refresh()
                     'IdRequisiciónTextBox.Text = "" Me borra la linea anterior
                     '' FechaDateTimePicker.Enabled = False
                     'ObservaciónTextBox.Text = ""
@@ -138,7 +129,7 @@ Public Class Requisicion
         End If
     End Sub
 
-    Private Sub FechaDateTimePicker_ValueChanged(sender As Object, e As EventArgs) Handles FechaDateTimePicker.ValueChanged
+    Private Sub FechaDateTimePicker_ValueChanged(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -152,7 +143,7 @@ Public Class Requisicion
         CantidadTextBox.Enabled = False
 
         Guardar_Button_Requisicion.Enabled = False
-        RequisicionDataGridView.Enabled = True
+        RequisiciónDataGridView.Enabled = True
         Agregar_Button_Requisicion.Enabled = True
         Eliminar_Requisicion_Button.Enabled = True
 
@@ -165,8 +156,9 @@ Public Class Requisicion
 
         Me.Validate()
         RequisicionBindingSource.RemoveCurrent()
-        RequisicionDataGridView.Refresh()
+        RequisiciónDataGridView.Refresh()
         Me.TableAdapterManager.UpdateAll(Me._Inv_Bodegas_DataSet)
+        ' autogenerate_id()
     End Sub
 
     Private Sub BuscarButton_Click(sender As Object, e As EventArgs) Handles BuscarButton.Click

@@ -226,7 +226,7 @@ Partial Class DetalleSalida_Form
         Me.Cancelar_Operacion.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.Cancelar_Operacion.Name = "Cancelar_Operacion"
         Me.Cancelar_Operacion.Size = New System.Drawing.Size(24, 24)
-        Me.Cancelar_Operacion.Text = "ToolStripButton1"
+        Me.Cancelar_Operacion.Text = "Cancelar"
         Me.Cancelar_Operacion.ToolTipText = "Cancelar"
         Me.Cancelar_Operacion.Visible = False
         '

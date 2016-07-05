@@ -58,7 +58,7 @@ Namespace My
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
          Global.System.Configuration.DefaultSettingValueAttribute("Data Source=MARILYN\SQLEXPRESS;Initial Catalog=""Inventario de Bodega UNICAH"";Inte"& _ 
-            "grated Security=True")>  _
+            "grated Security=True; MultipleActiveResultSets = True")>  _
         Public ReadOnly Property Inventario_de_Bodegas_UNICAHConnectionString() As String
             Get
                 Return CType(Me("Inventario_de_Bodegas_UNICAHConnectionString"),String)

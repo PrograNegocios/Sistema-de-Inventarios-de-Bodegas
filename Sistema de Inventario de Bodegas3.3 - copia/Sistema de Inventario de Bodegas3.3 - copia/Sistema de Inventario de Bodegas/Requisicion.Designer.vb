@@ -281,6 +281,7 @@ Partial Class Requisicion
         Me.IdRequisiciónDataGridViewTextBoxColumn.DataPropertyName = "IdRequisición"
         Me.IdRequisiciónDataGridViewTextBoxColumn.HeaderText = "IdRequisición"
         Me.IdRequisiciónDataGridViewTextBoxColumn.Name = "IdRequisiciónDataGridViewTextBoxColumn"
+        Me.IdRequisiciónDataGridViewTextBoxColumn.ReadOnly = True
         '
         'FechaDataGridViewTextBoxColumn
         '
@@ -440,6 +441,7 @@ Partial Class Requisicion
         Me.IdRequisiciónTextBox.Enabled = False
         Me.IdRequisiciónTextBox.Location = New System.Drawing.Point(109, 117)
         Me.IdRequisiciónTextBox.Name = "IdRequisiciónTextBox"
+        Me.IdRequisiciónTextBox.ReadOnly = True
         Me.IdRequisiciónTextBox.Size = New System.Drawing.Size(76, 20)
         Me.IdRequisiciónTextBox.TabIndex = 87
         '

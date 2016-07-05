@@ -41,14 +41,9 @@ Partial Class Departamento_Form
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.Cancelar_Operacion = New System.Windows.Forms.ToolStripButton()
         Me.IdDepartamentoTextBox = New System.Windows.Forms.TextBox()
-        Me.DepartamentoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me._Inv_Bodegas_DataSet = New Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet()
         Me.NombreTextBox = New System.Windows.Forms.TextBox()
         Me.EncargadoTextBox = New System.Windows.Forms.TextBox()
         Me.DeptoDataGridView = New System.Windows.Forms.DataGridView()
-        Me.IdDepartamentoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NombreDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.EncargadoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.BuscarButton = New System.Windows.Forms.Button()
         Me.BuscarTextBox = New System.Windows.Forms.TextBox()
@@ -57,19 +52,24 @@ Partial Class Departamento_Form
         Me.Agregar_Button_Depto = New System.Windows.Forms.Button()
         Me.Salir_Button = New System.Windows.Forms.Button()
         Me.Guardar_Button_Depto = New System.Windows.Forms.Button()
-        Me.DepartamentoTableAdapter = New Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.DepartamentoTableAdapter()
+        Me.DepartamentoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me._Inv_Bodegas_DataSet = New Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet()
+        Me.IdDepartamentoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NombreDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EncargadoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TableAdapterManager = New Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.TableAdapterManager()
+        Me.DepartamentoTableAdapter = New Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.DepartamentoTableAdapter()
         IdDepartamentoLabel = New System.Windows.Forms.Label()
         NombreLabel = New System.Windows.Forms.Label()
         EncargadoLabel = New System.Windows.Forms.Label()
         BuscarLabel = New System.Windows.Forms.Label()
         CType(Me.InventarioBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.InventarioBindingNavigator.SuspendLayout()
-        CType(Me.DepartamentoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me._Inv_Bodegas_DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DeptoDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBoxOpciones_p.SuspendLayout()
+        CType(Me.DepartamentoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me._Inv_Bodegas_DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'IdDepartamentoLabel
@@ -223,18 +223,9 @@ Partial Class Departamento_Form
         Me.IdDepartamentoTextBox.Enabled = False
         Me.IdDepartamentoTextBox.Location = New System.Drawing.Point(99, 13)
         Me.IdDepartamentoTextBox.Name = "IdDepartamentoTextBox"
+        Me.IdDepartamentoTextBox.ReadOnly = True
         Me.IdDepartamentoTextBox.Size = New System.Drawing.Size(100, 20)
         Me.IdDepartamentoTextBox.TabIndex = 88
-        '
-        'DepartamentoBindingSource
-        '
-        Me.DepartamentoBindingSource.DataMember = "Departamento"
-        Me.DepartamentoBindingSource.DataSource = Me._Inv_Bodegas_DataSet
-        '
-        '_Inv_Bodegas_DataSet
-        '
-        Me._Inv_Bodegas_DataSet.DataSetName = "Inv-Bodegas_DataSet"
-        Me._Inv_Bodegas_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'NombreTextBox
         '
@@ -264,24 +255,6 @@ Partial Class Departamento_Form
         Me.DeptoDataGridView.Name = "DeptoDataGridView"
         Me.DeptoDataGridView.Size = New System.Drawing.Size(346, 90)
         Me.DeptoDataGridView.TabIndex = 91
-        '
-        'IdDepartamentoDataGridViewTextBoxColumn
-        '
-        Me.IdDepartamentoDataGridViewTextBoxColumn.DataPropertyName = "IdDepartamento"
-        Me.IdDepartamentoDataGridViewTextBoxColumn.HeaderText = "IdDepartamento"
-        Me.IdDepartamentoDataGridViewTextBoxColumn.Name = "IdDepartamentoDataGridViewTextBoxColumn"
-        '
-        'NombreDataGridViewTextBoxColumn
-        '
-        Me.NombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre"
-        Me.NombreDataGridViewTextBoxColumn.HeaderText = "Nombre"
-        Me.NombreDataGridViewTextBoxColumn.Name = "NombreDataGridViewTextBoxColumn"
-        '
-        'EncargadoDataGridViewTextBoxColumn
-        '
-        Me.EncargadoDataGridViewTextBoxColumn.DataPropertyName = "Encargado"
-        Me.EncargadoDataGridViewTextBoxColumn.HeaderText = "Encargado"
-        Me.EncargadoDataGridViewTextBoxColumn.Name = "EncargadoDataGridViewTextBoxColumn"
         '
         'GroupBox1
         '
@@ -384,21 +357,51 @@ Partial Class Departamento_Form
         Me.Guardar_Button_Depto.Text = "Guardar"
         Me.Guardar_Button_Depto.UseVisualStyleBackColor = False
         '
-        'DepartamentoTableAdapter
+        'DepartamentoBindingSource
         '
-        Me.DepartamentoTableAdapter.ClearBeforeFill = True
+        Me.DepartamentoBindingSource.DataMember = "Departamento"
+        Me.DepartamentoBindingSource.DataSource = Me._Inv_Bodegas_DataSet
+        '
+        '_Inv_Bodegas_DataSet
+        '
+        Me._Inv_Bodegas_DataSet.DataSetName = "Inv-Bodegas_DataSet"
+        Me._Inv_Bodegas_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'IdDepartamentoDataGridViewTextBoxColumn
+        '
+        Me.IdDepartamentoDataGridViewTextBoxColumn.DataPropertyName = "IdDepartamento"
+        Me.IdDepartamentoDataGridViewTextBoxColumn.HeaderText = "IdDepartamento"
+        Me.IdDepartamentoDataGridViewTextBoxColumn.Name = "IdDepartamentoDataGridViewTextBoxColumn"
+        Me.IdDepartamentoDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'NombreDataGridViewTextBoxColumn
+        '
+        Me.NombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre"
+        Me.NombreDataGridViewTextBoxColumn.HeaderText = "Nombre"
+        Me.NombreDataGridViewTextBoxColumn.Name = "NombreDataGridViewTextBoxColumn"
+        '
+        'EncargadoDataGridViewTextBoxColumn
+        '
+        Me.EncargadoDataGridViewTextBoxColumn.DataPropertyName = "Encargado"
+        Me.EncargadoDataGridViewTextBoxColumn.HeaderText = "Encargado"
+        Me.EncargadoDataGridViewTextBoxColumn.Name = "EncargadoDataGridViewTextBoxColumn"
         '
         'TableAdapterManager
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.BodegaTableAdapter = Nothing
-        Me.TableAdapterManager.DepartamentoTableAdapter = Me.DepartamentoTableAdapter
+        Me.TableAdapterManager.Connection = Nothing
+        Me.TableAdapterManager.DepartamentoTableAdapter = Nothing
         Me.TableAdapterManager.Detalle_SalidasTableAdapter = Nothing
         Me.TableAdapterManager.InventarioTableAdapter = Nothing
         Me.TableAdapterManager.ProductoTableAdapter = Nothing
         Me.TableAdapterManager.RequisiciónTableAdapter = Nothing
         Me.TableAdapterManager.SalidasTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
+        'DepartamentoTableAdapter
+        '
+        Me.DepartamentoTableAdapter.ClearBeforeFill = True
         '
         'Departamento_Form
         '
@@ -420,12 +423,12 @@ Partial Class Departamento_Form
         CType(Me.InventarioBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.InventarioBindingNavigator.ResumeLayout(False)
         Me.InventarioBindingNavigator.PerformLayout()
-        CType(Me.DepartamentoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me._Inv_Bodegas_DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DeptoDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBoxOpciones_p.ResumeLayout(False)
+        CType(Me.DepartamentoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me._Inv_Bodegas_DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -445,7 +448,6 @@ Partial Class Departamento_Form
     Friend WithEvents Cancelar_Operacion As ToolStripButton
     Friend WithEvents _Inv_Bodegas_DataSet As _Inv_Bodegas_DataSet
     Friend WithEvents DepartamentoBindingSource As BindingSource
-    Friend WithEvents DepartamentoTableAdapter As _Inv_Bodegas_DataSetTableAdapters.DepartamentoTableAdapter
     Friend WithEvents TableAdapterManager As _Inv_Bodegas_DataSetTableAdapters.TableAdapterManager
     Friend WithEvents IdDepartamentoTextBox As TextBox
     Friend WithEvents NombreTextBox As TextBox
@@ -462,4 +464,5 @@ Partial Class Departamento_Form
     Friend WithEvents IdDepartamentoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents NombreDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents EncargadoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents DepartamentoTableAdapter As _Inv_Bodegas_DataSetTableAdapters.DepartamentoTableAdapter
 End Class

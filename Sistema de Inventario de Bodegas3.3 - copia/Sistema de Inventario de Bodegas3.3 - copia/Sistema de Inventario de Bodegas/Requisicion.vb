@@ -7,6 +7,7 @@ Public Class Requisicion
     Public con As New SqlConnection
     Public cmd As New SqlCommand
     Private Sub Requisicion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         'TODO: esta línea de código carga datos en la tabla 'Inventario_de_Bodega_UNICAHDataSet3.sub_departamentos_sel' Puede moverla o quitarla según sea necesario.
         Me.Sub_departamentos_selTableAdapter.Fill(Me.Inventario_de_Bodega_UNICAHDataSet3.sub_departamentos_sel)
         'TODO: esta línea de código carga datos en la tabla 'Inventario_de_Bodega_UNICAHDataSet2.sub_departamentos_sel' Puede moverla o quitarla según sea necesario.
@@ -21,13 +22,44 @@ Public Class Requisicion
         con.ConnectionString = My.Settings.Inventario_de_Bodegas_UNICAHConnectionString
         con.Open()
 
-    End Sub
 
+        'Me.BindingContext(DsAuthors1, "authors").Position -= 1
+        'ShowPosition()
+    End Sub
+    'Public Function ultimoId() As Integer
+    '    Dim resultado As Integer
+    '    Dim query As String = "SELECT MAX(IdRequisición)FROM Requisición"
+    '    Dim comando As SqlCommand
+    '    'Dim lector As SqlDataReader
+    '    'con.Open()
+    '    comando = New SqlCommand(query, con)
+    '    'lector = comando.ExecuteReader
+    '    'If lector.Read Then
+    '    '    resultado = CInt(lector(0).ToString)
+    '    'End If
+    '    'lector.Close()
+    '    con.Close()
+    '    Return resultado
+    'End Function
+
+    'Private Sub ShowPosition()
+    '    Dim iCnt As Integer
+    '    Dim iPos As Integer
+    '    iCnt = Me.BindingContext(DsAuthors1, "authors").Count
+    '    If iCnt = 0 Then
+    '        txtPosition.Text = "(No records)"
+    '    Else
+    '        iPos = Me.BindingContext(DsAuthors1, "authors").Position + 1
+    '        txtPosition.Text = iPos.ToString & " of " & iCnt.ToString
+    '    End If
+    'End Sub
     Private Sub Cancelar_Operacion_Click(sender As Object, e As EventArgs)
 
     End Sub
 
     Private Sub Agregar_Button_Requisicion_Click(sender As Object, e As EventArgs) Handles Agregar_Button_Requisicion.Click
+
+
         RequisicionBindingSource.AddNew()
         Agregar_Button_Requisicion.Enabled = False
         Eliminar_Requisicion_Button.Enabled = False

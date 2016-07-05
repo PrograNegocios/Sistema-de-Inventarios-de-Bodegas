@@ -8,7 +8,10 @@ Public Class Departamento_Form
     Private Sub Departamento_Form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: esta línea de código carga datos en la tabla '_Inv_Bodegas_DataSet.Departamento' Puede moverla o quitarla según sea necesario.
         Me.DepartamentoTableAdapter.Fill(Me._Inv_Bodegas_DataSet.Departamento)
-
+        Me.DepartamentoBindingSource.ResetBindings(True)
+        Me.InventarioBindingNavigator.Refresh()
+        con.ConnectionString = My.Settings.Inventario_de_Bodegas_UNICAHConnectionString
+        con.Open()
     End Sub
 
     Private Sub Agregar_Button_Depto_Click(sender As Object, e As EventArgs) Handles Agregar_Button_Depto.Click

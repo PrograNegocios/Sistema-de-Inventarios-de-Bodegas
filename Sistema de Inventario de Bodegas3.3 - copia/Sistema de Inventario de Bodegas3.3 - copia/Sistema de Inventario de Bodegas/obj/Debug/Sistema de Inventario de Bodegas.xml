@@ -46,6 +46,11 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.UsuariosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
 <member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.InventarioRow">
 <summary>
 Represents strongly named DataRow class.
@@ -77,6 +82,11 @@ Represents strongly named DataRow class.
 </summary>
 </member>
 <member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.Detalle_SalidasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.UsuariosRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -116,6 +126,11 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.UsuariosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
 <member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.InventarioTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
@@ -147,6 +162,11 @@ Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
 <member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.Detalle_SalidasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.UsuariosTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

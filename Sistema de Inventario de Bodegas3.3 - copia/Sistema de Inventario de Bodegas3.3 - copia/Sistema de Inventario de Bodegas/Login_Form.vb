@@ -1,4 +1,10 @@
-﻿Public Class Login_Form
+﻿Imports System.Data.Sql
+Imports System.Data.SqlClient
+Imports System.Data
+Imports System.Linq
+Public Class Login_Form
+    Public con As New SqlConnection
+    Public cmd As New SqlCommand
     Dim fu
     Dim eu
 
@@ -6,89 +12,64 @@
         Login_ProgressBar.Increment(5)
         If Login_ProgressBar.Value = 100 Then
             Login_Timer.Enabled = False
-            MsgBox("Bienvenido al sistema " & txtUser.Text)
+            MsgBox("Bienvenido al sistema " & NombreTextBox.Text)
             Me.Hide()
             Menu_Form.Show()
         End If
     End Sub
-
-    Private Sub Exit_Botton_Click(sender As Object, e As EventArgs) Handles Exit_Botton.Click
-        Me.Close()
-    End Sub
-
-    Private Sub Experimental_Button_Click(sender As Object, e As EventArgs) Handles Experimental_Button.Click
+    Private Sub validacion()
         Try
-            If txtPassword.Text <> "" And txtUser.Text <> "" Then
-                Dim dt As New DataTable
-                eu._users = txtUser.Text
-                eu._passwords = txtPassword.Text
-                dt = fu.validarusuario(eu)
-                If dt.Rows.Count > 0 Then
-                    Login_Timer.Start()
-                    'Dim nivel As String
-                    'nivel = dt.Rows(0)("nivel")
-                    'If nivel = "usuario" Then
-                    '    My.Forms.MDIParent1.msmantenimiento.Enabled = False
-                    'ElseIf nivel = "administrador" Then
+            cmd = New SqlCommand("SELECT * FROM Usuarios WHERE Nombre='" + NombreTextBox.Text + "'AND Contraseña='" + ContraseñaTextBox.Text + "'", con)
+            ' cmd.ExecuteNonQuery()
+            Dim dr As SqlDataReader = cmd.ExecuteReader
+            dr.Read()
+            If dr.HasRows Then
+                Menu_Form.Show()
+                Me.Close()
+            Else
+                MsgBox("Los datos son incorrectos, Registrese o Actualice la Contraseña")
+                NombreTextBox.Text = ""
+                ContraseñaTextBox.Text = ""
+                NombreTextBox.Focus()
 
-                    '    My.Forms.MDIParent1.MenuStrip.Enabled = True
-                    'End If
-                Else
-                    Static intento As Integer
-                    intento = intento + 1
-                    MsgBox("estimado usuario te quedan " & (3 - intento) & " intentos")
-                    If intento = 3 Then
-                        MsgBox("el sistema se cerrara , gracias", MsgBoxStyle.Critical, "SISTEMA")
-                        Me.Close()
-                        'inicio de proceso de apagado
-                        'Process.Start("shutdow.exe", "-s -t 00")
-                    End If
-                End If
             End If
         Catch ex As Exception
             MsgBox(ex.Message)
+            Exit Sub
         End Try
+
     End Sub
-
-    Private Sub Enter_Button_Click(sender As Object, e As EventArgs) Handles Enter_Button.Click
-        If txtUser.Text = "" And txtPassword.Text = "" Then
-            MsgBox("Los campos se encuentran vacios")
-        Else
-            If txtUser.Text = "" Then
-                MsgBox("El campo USUARIO se encuentra vacio")
-            Else
-                If txtPassword.Text = "" Then
-                    MsgBox("El campo CONTRASEÑA se encuentra vacio")
-                Else
-                    If txtUser.Text = "unicah" And txtPassword.Text = "unicah" Then
-                        'Me.Hide()
-                        Login_ProgressBar.Visible = True
-                        Login_Timer.Start()
-                    Else
-                        MsgBox("Los datos son incorrectos")
-                    End If
-                End If
-            End If
-        End If
+    Private Sub Exit_Botton_Click(sender As Object, e As EventArgs) Handles Exit_Botton.Click
+        Me.Close()
     End Sub
-
-    Private Sub txtUser_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtUser.KeyPress
-
-        If e.KeyChar = ChrW(Keys.Enter) Then
-            e.Handled = True
-            SendKeys.Send("{TAB}")
-
-        End If
-    End Sub
-
-    Private Sub txtPassword_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtPassword.KeyPress
-        If Asc(e.KeyChar) = 13 Then
-            e.Handled = True
-            Enter_Button.PerformClick()
-        End If
-    End Sub
-
     Private Sub Login_Form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla '_Inv_Bodegas_DataSet.Usuarios' Puede moverla o quitarla según sea necesario.
+        ' Me.UsuariosTableAdapter.Fill(Me._Inv_Bodegas_DataSet.Usuarios)
+        Me.UsuariosBindingSource.ResetBindings(True)
+        ' Me.UsuariosBindingNavigatorSaveItem_Click.Refresh()
+        con.ConnectionString = My.Settings.Inventario_de_Bodegas_UNICAHConnectionString
+        con.Open()
 
+    End Sub
+
+    Private Sub UsuariosBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs)
+        Me.Validate()
+        Me.UsuariosBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me._Inv_Bodegas_DataSet)
+
+    End Sub
+
+    Private Sub EntrarLogin_Click(sender As Object, e As EventArgs) Handles EntrarLogin.Click
+        validacion()
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        IngresarPersonas.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub RegistrarseButton_Click(sender As Object, e As EventArgs) Handles RegistrarseButton.Click
+        RegistrarUsuarios.Show()
+        Me.Close()
     End Sub
 End Class

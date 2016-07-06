@@ -13,6 +13,7 @@
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publicar\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -25,7 +26,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -107,6 +107,12 @@
     <Compile Include="DetalleSalida_Form.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="IngresarPersonas.Designer.vb">
+      <DependentUpon>IngresarPersonas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IngresarPersonas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Inv-Bodegas_DataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -184,6 +190,12 @@
     <Compile Include="Producto_Form.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="RegistrarUsuarios.Designer.vb">
+      <DependentUpon>RegistrarUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Requisicion.Designer.vb">
       <DependentUpon>Requisicion.vb</DependentUpon>
     </Compile>
@@ -202,6 +214,9 @@
     <EmbeddedResource Include="DetalleSalida_Form.resx">
       <DependentUpon>DetalleSalida_Form.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IngresarPersonas.resx">
+      <DependentUpon>IngresarPersonas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inventario_Form.resx">
       <DependentUpon>Inventario_Form.vb</DependentUpon>
     </EmbeddedResource>
@@ -219,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Producto_Form.resx">
       <DependentUpon>Producto_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarUsuarios.resx">
+      <DependentUpon>RegistrarUsuarios.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Requisicion.resx">
       <DependentUpon>Requisicion.vb</DependentUpon>

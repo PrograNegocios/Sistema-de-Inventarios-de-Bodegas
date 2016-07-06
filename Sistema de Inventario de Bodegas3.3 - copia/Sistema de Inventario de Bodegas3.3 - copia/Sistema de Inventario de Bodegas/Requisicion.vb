@@ -7,6 +7,8 @@ Public Class Requisicion
     Public con As New SqlConnection
     Public cmd As New SqlCommand
 
+
+
     Private Sub Requisicion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         'TODO: esta línea de código carga datos en la tabla 'Inventario_de_Bodega_UNICAHDataSet3.sub_departamentos_sel' Puede moverla o quitarla según sea necesario.

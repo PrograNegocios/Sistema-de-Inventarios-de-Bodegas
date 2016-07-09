@@ -183,9 +183,15 @@ Partial Class Producto_Form
         'TableAdapterManager
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.BodegaTableAdapter = Nothing
+        Me.TableAdapterManager.DepartamentoTableAdapter = Nothing
+        Me.TableAdapterManager.Detalle_SalidasTableAdapter = Nothing
         Me.TableAdapterManager.InventarioTableAdapter = Nothing
         Me.TableAdapterManager.ProductoTableAdapter = Me.ProductoTableAdapter
+        Me.TableAdapterManager.RequisiciónTableAdapter = Nothing
+        Me.TableAdapterManager.SalidasTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UsuariosTableAdapter = Nothing
         '
         'ProductoBindingNavigator
         '

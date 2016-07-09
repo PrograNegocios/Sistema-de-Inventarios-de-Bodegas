@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Requisicion
+Partial Class Requisicion_Form
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -26,11 +26,11 @@ Partial Class Requisicion
         Dim BuscarLabel As System.Windows.Forms.Label
         Dim IdRequisiciónLabel As System.Windows.Forms.Label
         Dim FechaLabel As System.Windows.Forms.Label
-        Dim IdDepartamentoLabel As System.Windows.Forms.Label
         Dim ObservaciónLabel As System.Windows.Forms.Label
         Dim NombreProductoLabel As System.Windows.Forms.Label
         Dim CantidadLabel As System.Windows.Forms.Label
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Requisicion))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Requisicion_Form))
+        Dim IdDepartamentoLabel As System.Windows.Forms.Label
         Me.Label_Inventario = New System.Windows.Forms.Label()
         Me.BuscarButton = New System.Windows.Forms.Button()
         Me.BuscarTextBox = New System.Windows.Forms.TextBox()
@@ -41,17 +41,6 @@ Partial Class Requisicion
         Me.Guardar_Button_Requisicion = New System.Windows.Forms.Button()
         Me.RequisicionBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me._Inv_Bodegas_DataSet = New Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet()
-        Me.InventarioBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
-        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
-        Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
-        Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.Cancelar_Operacion = New System.Windows.Forms.ToolStripButton()
         Me.RequisiciónTableAdapter = New Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.RequisiciónTableAdapter()
         Me.TableAdapterManager = New Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.TableAdapterManager()
         Me.InvBodegasDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -66,30 +55,42 @@ Partial Class Requisicion
         Me.Inventario_de_Bodega_UNICAHDataSet2 = New Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet2()
         Me.Sub_departamentos_selTableAdapter = New Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet3TableAdapters.sub_departamentos_selTableAdapter()
         Me.IdRequisiciónTextBox = New System.Windows.Forms.TextBox()
+        Me.FechaDateTimePicker = New System.Windows.Forms.DateTimePicker()
+        Me.ObservaciónTextBox = New System.Windows.Forms.TextBox()
+        Me.NombreProductoComboBox = New System.Windows.Forms.ComboBox()
+        Me.CantidadTextBox = New System.Windows.Forms.TextBox()
+        Me.InventarioBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
+        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
+        Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
+        Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
+        Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.Cancelar_Operacion = New System.Windows.Forms.ToolStripButton()
+        Me.IdDepartamentoComboBox = New System.Windows.Forms.ComboBox()
         Me.RequisiciónDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FechaDateTimePicker = New System.Windows.Forms.DateTimePicker()
-        Me.IdDepartamentoComboBox = New System.Windows.Forms.ComboBox()
-        Me.ObservaciónTextBox = New System.Windows.Forms.TextBox()
-        Me.NombreProductoComboBox = New System.Windows.Forms.ComboBox()
-        Me.CantidadTextBox = New System.Windows.Forms.TextBox()
+        Me.Inventario_de_Bodega_UNICAHDataSet7 = New Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet7()
+        Me.SubfiltrodeptoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Sub_filtro_deptoTableAdapter = New Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet7TableAdapters.sub_filtro_deptoTableAdapter()
         BuscarLabel = New System.Windows.Forms.Label()
         IdRequisiciónLabel = New System.Windows.Forms.Label()
         FechaLabel = New System.Windows.Forms.Label()
-        IdDepartamentoLabel = New System.Windows.Forms.Label()
         ObservaciónLabel = New System.Windows.Forms.Label()
         NombreProductoLabel = New System.Windows.Forms.Label()
         CantidadLabel = New System.Windows.Forms.Label()
+        IdDepartamentoLabel = New System.Windows.Forms.Label()
         Me.GroupBoxOpciones_p.SuspendLayout()
         CType(Me.RequisicionBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me._Inv_Bodegas_DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.InventarioBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.InventarioBindingNavigator.SuspendLayout()
         CType(Me.InvBodegasDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Inventario_de_Bodega_UNICAHDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SubdepartamentosselBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -98,13 +99,17 @@ Partial Class Requisicion
         CType(Me.Inventario_de_Bodega_UNICAHDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Inventario_de_Bodega_UNICAHDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.InventarioBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.InventarioBindingNavigator.SuspendLayout()
         CType(Me.RequisiciónDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Inventario_de_Bodega_UNICAHDataSet7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SubfiltrodeptoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BuscarLabel
         '
         BuscarLabel.AutoSize = True
-        BuscarLabel.Location = New System.Drawing.Point(12, 79)
+        BuscarLabel.Location = New System.Drawing.Point(18, 82)
         BuscarLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         BuscarLabel.Name = "BuscarLabel"
         BuscarLabel.Size = New System.Drawing.Size(43, 13)
@@ -128,15 +133,6 @@ Partial Class Requisicion
         FechaLabel.Size = New System.Drawing.Size(40, 13)
         FechaLabel.TabIndex = 95
         FechaLabel.Text = "Fecha:"
-        '
-        'IdDepartamentoLabel
-        '
-        IdDepartamentoLabel.AutoSize = True
-        IdDepartamentoLabel.Location = New System.Drawing.Point(15, 151)
-        IdDepartamentoLabel.Name = "IdDepartamentoLabel"
-        IdDepartamentoLabel.Size = New System.Drawing.Size(89, 13)
-        IdDepartamentoLabel.TabIndex = 96
-        IdDepartamentoLabel.Text = "Id Departamento:"
         '
         'ObservaciónLabel
         '
@@ -172,9 +168,9 @@ Partial Class Requisicion
         Me.Label_Inventario.Location = New System.Drawing.Point(0, 0)
         Me.Label_Inventario.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label_Inventario.Name = "Label_Inventario"
-        Me.Label_Inventario.Size = New System.Drawing.Size(669, 43)
+        Me.Label_Inventario.Size = New System.Drawing.Size(677, 43)
         Me.Label_Inventario.TabIndex = 39
-        Me.Label_Inventario.Text = "Requisición de Inventario"
+        Me.Label_Inventario.Text = "Requisición"
         Me.Label_Inventario.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'BuscarButton
@@ -182,7 +178,7 @@ Partial Class Requisicion
         Me.BuscarButton.BackgroundImage = Global.Sistema_de_Inventario_de_Bodegas.My.Resources.Resources._16__Search_
         Me.BuscarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BuscarButton.Location = New System.Drawing.Point(225, 78)
+        Me.BuscarButton.Location = New System.Drawing.Point(211, 78)
         Me.BuscarButton.Name = "BuscarButton"
         Me.BuscarButton.Size = New System.Drawing.Size(28, 23)
         Me.BuscarButton.TabIndex = 82
@@ -190,7 +186,7 @@ Partial Class Requisicion
         '
         'BuscarTextBox
         '
-        Me.BuscarTextBox.Location = New System.Drawing.Point(111, 79)
+        Me.BuscarTextBox.Location = New System.Drawing.Point(97, 79)
         Me.BuscarTextBox.Margin = New System.Windows.Forms.Padding(2)
         Me.BuscarTextBox.Multiline = True
         Me.BuscarTextBox.Name = "BuscarTextBox"
@@ -204,7 +200,7 @@ Partial Class Requisicion
         Me.GroupBoxOpciones_p.Controls.Add(Me.Salir_Button)
         Me.GroupBoxOpciones_p.Controls.Add(Me.Guardar_Button_Requisicion)
         Me.GroupBoxOpciones_p.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBoxOpciones_p.Location = New System.Drawing.Point(15, 428)
+        Me.GroupBoxOpciones_p.Location = New System.Drawing.Point(16, 449)
         Me.GroupBoxOpciones_p.Name = "GroupBoxOpciones_p"
         Me.GroupBoxOpciones_p.Size = New System.Drawing.Size(561, 83)
         Me.GroupBoxOpciones_p.TabIndex = 84
@@ -253,7 +249,6 @@ Partial Class Requisicion
         'Guardar_Button_Requisicion
         '
         Me.Guardar_Button_Requisicion.BackColor = System.Drawing.Color.PowderBlue
-        Me.Guardar_Button_Requisicion.Enabled = False
         Me.Guardar_Button_Requisicion.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guardar_Button_Requisicion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Guardar_Button_Requisicion.ImageKey = "(ninguno)"
@@ -274,10 +269,132 @@ Partial Class Requisicion
         Me._Inv_Bodegas_DataSet.DataSetName = "Inv-Bodegas_DataSet"
         Me._Inv_Bodegas_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
+        'RequisiciónTableAdapter
+        '
+        Me.RequisiciónTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.BodegaTableAdapter = Nothing
+        Me.TableAdapterManager.DepartamentoTableAdapter = Nothing
+        Me.TableAdapterManager.Detalle_EntradasTableAdapter = Nothing
+        Me.TableAdapterManager.Detalle_SalidasTableAdapter = Nothing
+        Me.TableAdapterManager.EntradasTableAdapter = Nothing
+        Me.TableAdapterManager.InventarioTableAdapter = Nothing
+        Me.TableAdapterManager.ProductoTableAdapter = Nothing
+        Me.TableAdapterManager.RequisiciónTableAdapter = Me.RequisiciónTableAdapter
+        Me.TableAdapterManager.SalidasTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UsuariosTableAdapter = Nothing
+        '
+        'InvBodegasDataSetBindingSource
+        '
+        Me.InvBodegasDataSetBindingSource.DataSource = Me._Inv_Bodegas_DataSet
+        Me.InvBodegasDataSetBindingSource.Position = 0
+        '
+        'Inventario_de_Bodega_UNICAHDataSet
+        '
+        Me.Inventario_de_Bodega_UNICAHDataSet.DataSetName = "Inventario_de_Bodega_UNICAHDataSet"
+        Me.Inventario_de_Bodega_UNICAHDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'SubdepartamentosselBindingSource
+        '
+        Me.SubdepartamentosselBindingSource.DataMember = "sub_departamentos_sel"
+        Me.SubdepartamentosselBindingSource.DataSource = Me.Inventario_de_Bodega_UNICAHDataSet3
+        '
+        'Inventario_de_Bodega_UNICAHDataSet3
+        '
+        Me.Inventario_de_Bodega_UNICAHDataSet3.DataSetName = "Inventario_de_Bodega_UNICAHDataSet3"
+        Me.Inventario_de_Bodega_UNICAHDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'SubNombreProductoselBindingSource
+        '
+        Me.SubNombreProductoselBindingSource.DataMember = "sub_NombreProducto_sel"
+        Me.SubNombreProductoselBindingSource.DataSource = Me.Inventario_de_Bodega_UNICAHDataSet1
+        '
+        'Inventario_de_Bodega_UNICAHDataSet1
+        '
+        Me.Inventario_de_Bodega_UNICAHDataSet1.DataSetName = "Inventario_de_Bodega_UNICAHDataSet1"
+        Me.Inventario_de_Bodega_UNICAHDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'ProductoBindingSource
+        '
+        Me.ProductoBindingSource.DataMember = "Producto"
+        Me.ProductoBindingSource.DataSource = Me.InvBodegasDataSetBindingSource
+        '
+        'ProductoTableAdapter
+        '
+        Me.ProductoTableAdapter.ClearBeforeFill = True
+        '
+        'Sub_NombreProducto_selTableAdapter
+        '
+        Me.Sub_NombreProducto_selTableAdapter.ClearBeforeFill = True
+        '
+        'Inventario_de_Bodega_UNICAHDataSet2
+        '
+        Me.Inventario_de_Bodega_UNICAHDataSet2.DataSetName = "Inventario_de_Bodega_UNICAHDataSet2"
+        Me.Inventario_de_Bodega_UNICAHDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'Sub_departamentos_selTableAdapter
+        '
+        Me.Sub_departamentos_selTableAdapter.ClearBeforeFill = True
+        '
+        'IdRequisiciónTextBox
+        '
+        Me.IdRequisiciónTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.RequisicionBindingSource, "IdRequisición", True))
+        Me.IdRequisiciónTextBox.Enabled = False
+        Me.IdRequisiciónTextBox.Location = New System.Drawing.Point(138, 117)
+        Me.IdRequisiciónTextBox.Name = "IdRequisiciónTextBox"
+        Me.IdRequisiciónTextBox.ReadOnly = True
+        Me.IdRequisiciónTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.IdRequisiciónTextBox.TabIndex = 95
+        '
+        'FechaDateTimePicker
+        '
+        Me.FechaDateTimePicker.Checked = False
+        Me.FechaDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.RequisicionBindingSource, "Fecha", True))
+        Me.FechaDateTimePicker.Enabled = False
+        Me.FechaDateTimePicker.Location = New System.Drawing.Point(435, 120)
+        Me.FechaDateTimePicker.Name = "FechaDateTimePicker"
+        Me.FechaDateTimePicker.Size = New System.Drawing.Size(208, 20)
+        Me.FechaDateTimePicker.TabIndex = 96
+        '
+        'ObservaciónTextBox
+        '
+        Me.ObservaciónTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.RequisicionBindingSource, "Observación", True))
+        Me.ObservaciónTextBox.Enabled = False
+        Me.ObservaciónTextBox.Location = New System.Drawing.Point(435, 151)
+        Me.ObservaciónTextBox.Name = "ObservaciónTextBox"
+        Me.ObservaciónTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.ObservaciónTextBox.TabIndex = 98
+        '
+        'NombreProductoComboBox
+        '
+        Me.NombreProductoComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.RequisicionBindingSource, "NombreProducto", True))
+        Me.NombreProductoComboBox.DataSource = Me.SubNombreProductoselBindingSource
+        Me.NombreProductoComboBox.DisplayMember = "Nombre"
+        Me.NombreProductoComboBox.Enabled = False
+        Me.NombreProductoComboBox.FormattingEnabled = True
+        Me.NombreProductoComboBox.Location = New System.Drawing.Point(138, 184)
+        Me.NombreProductoComboBox.Name = "NombreProductoComboBox"
+        Me.NombreProductoComboBox.Size = New System.Drawing.Size(121, 21)
+        Me.NombreProductoComboBox.TabIndex = 99
+        '
+        'CantidadTextBox
+        '
+        Me.CantidadTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.RequisicionBindingSource, "Cantidad", True))
+        Me.CantidadTextBox.Enabled = False
+        Me.CantidadTextBox.Location = New System.Drawing.Point(435, 187)
+        Me.CantidadTextBox.Name = "CantidadTextBox"
+        Me.CantidadTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.CantidadTextBox.TabIndex = 100
+        '
         'InventarioBindingNavigator
         '
         Me.InventarioBindingNavigator.AddNewItem = Nothing
         Me.InventarioBindingNavigator.BackColor = System.Drawing.Color.PowderBlue
+        Me.InventarioBindingNavigator.BindingSource = Me.RequisicionBindingSource
         Me.InventarioBindingNavigator.CountItem = Me.BindingNavigatorCountItem
         Me.InventarioBindingNavigator.DeleteItem = Nothing
         Me.InventarioBindingNavigator.ImageScalingSize = New System.Drawing.Size(20, 20)
@@ -289,8 +406,8 @@ Partial Class Requisicion
         Me.InventarioBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.InventarioBindingNavigator.Name = "InventarioBindingNavigator"
         Me.InventarioBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.InventarioBindingNavigator.Size = New System.Drawing.Size(669, 27)
-        Me.InventarioBindingNavigator.TabIndex = 86
+        Me.InventarioBindingNavigator.Size = New System.Drawing.Size(677, 27)
+        Me.InventarioBindingNavigator.TabIndex = 102
         Me.InventarioBindingNavigator.Text = "BindingNavigator1"
         '
         'BindingNavigatorCountItem
@@ -367,97 +484,39 @@ Partial Class Requisicion
         Me.Cancelar_Operacion.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.Cancelar_Operacion.Name = "Cancelar_Operacion"
         Me.Cancelar_Operacion.Size = New System.Drawing.Size(24, 24)
-        Me.Cancelar_Operacion.Text = "Cancelar"
+        Me.Cancelar_Operacion.Text = "Cancelar_Operacion"
         Me.Cancelar_Operacion.Visible = False
         '
-        'RequisiciónTableAdapter
+        'IdDepartamentoLabel
         '
-        Me.RequisiciónTableAdapter.ClearBeforeFill = True
+        IdDepartamentoLabel.AutoSize = True
+        IdDepartamentoLabel.Location = New System.Drawing.Point(17, 154)
+        IdDepartamentoLabel.Name = "IdDepartamentoLabel"
+        IdDepartamentoLabel.Size = New System.Drawing.Size(89, 13)
+        IdDepartamentoLabel.TabIndex = 102
+        IdDepartamentoLabel.Text = "Id Departamento:"
         '
-        'TableAdapterManager
+        'IdDepartamentoComboBox
         '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.BodegaTableAdapter = Nothing
-        Me.TableAdapterManager.DepartamentoTableAdapter = Nothing
-        Me.TableAdapterManager.Detalle_SalidasTableAdapter = Nothing
-        Me.TableAdapterManager.InventarioTableAdapter = Nothing
-        Me.TableAdapterManager.ProductoTableAdapter = Nothing
-        Me.TableAdapterManager.RequisiciónTableAdapter = Me.RequisiciónTableAdapter
-        Me.TableAdapterManager.SalidasTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        '
-        'InvBodegasDataSetBindingSource
-        '
-        Me.InvBodegasDataSetBindingSource.DataSource = Me._Inv_Bodegas_DataSet
-        Me.InvBodegasDataSetBindingSource.Position = 0
-        '
-        'Inventario_de_Bodega_UNICAHDataSet
-        '
-        Me.Inventario_de_Bodega_UNICAHDataSet.DataSetName = "Inventario_de_Bodega_UNICAHDataSet"
-        Me.Inventario_de_Bodega_UNICAHDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'SubdepartamentosselBindingSource
-        '
-        Me.SubdepartamentosselBindingSource.DataMember = "sub_departamentos_sel"
-        Me.SubdepartamentosselBindingSource.DataSource = Me.Inventario_de_Bodega_UNICAHDataSet3
-        '
-        'Inventario_de_Bodega_UNICAHDataSet3
-        '
-        Me.Inventario_de_Bodega_UNICAHDataSet3.DataSetName = "Inventario_de_Bodega_UNICAHDataSet3"
-        Me.Inventario_de_Bodega_UNICAHDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'SubNombreProductoselBindingSource
-        '
-        Me.SubNombreProductoselBindingSource.DataMember = "sub_NombreProducto_sel"
-        Me.SubNombreProductoselBindingSource.DataSource = Me.Inventario_de_Bodega_UNICAHDataSet1
-        '
-        'Inventario_de_Bodega_UNICAHDataSet1
-        '
-        Me.Inventario_de_Bodega_UNICAHDataSet1.DataSetName = "Inventario_de_Bodega_UNICAHDataSet1"
-        Me.Inventario_de_Bodega_UNICAHDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'ProductoBindingSource
-        '
-        Me.ProductoBindingSource.DataMember = "Producto"
-        Me.ProductoBindingSource.DataSource = Me.InvBodegasDataSetBindingSource
-        '
-        'ProductoTableAdapter
-        '
-        Me.ProductoTableAdapter.ClearBeforeFill = True
-        '
-        'Sub_NombreProducto_selTableAdapter
-        '
-        Me.Sub_NombreProducto_selTableAdapter.ClearBeforeFill = True
-        '
-        'Inventario_de_Bodega_UNICAHDataSet2
-        '
-        Me.Inventario_de_Bodega_UNICAHDataSet2.DataSetName = "Inventario_de_Bodega_UNICAHDataSet2"
-        Me.Inventario_de_Bodega_UNICAHDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'Sub_departamentos_selTableAdapter
-        '
-        Me.Sub_departamentos_selTableAdapter.ClearBeforeFill = True
-        '
-        'IdRequisiciónTextBox
-        '
-        Me.IdRequisiciónTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.RequisicionBindingSource, "IdRequisición", True))
-        Me.IdRequisiciónTextBox.Enabled = False
-        Me.IdRequisiciónTextBox.Location = New System.Drawing.Point(112, 117)
-        Me.IdRequisiciónTextBox.Name = "IdRequisiciónTextBox"
-        Me.IdRequisiciónTextBox.ReadOnly = True
-        Me.IdRequisiciónTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.IdRequisiciónTextBox.TabIndex = 95
+        Me.IdDepartamentoComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.RequisicionBindingSource, "IdDepartamento", True))
+        Me.IdDepartamentoComboBox.DataSource = Me.SubdepartamentosselBindingSource
+        Me.IdDepartamentoComboBox.DisplayMember = "IdDepartamento"
+        Me.IdDepartamentoComboBox.FormattingEnabled = True
+        Me.IdDepartamentoComboBox.Location = New System.Drawing.Point(138, 151)
+        Me.IdDepartamentoComboBox.Name = "IdDepartamentoComboBox"
+        Me.IdDepartamentoComboBox.Size = New System.Drawing.Size(121, 21)
+        Me.IdDepartamentoComboBox.TabIndex = 103
         '
         'RequisiciónDataGridView
         '
         Me.RequisiciónDataGridView.AutoGenerateColumns = False
         Me.RequisiciónDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.RequisiciónDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
+        Me.RequisiciónDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5})
         Me.RequisiciónDataGridView.DataSource = Me.RequisicionBindingSource
-        Me.RequisiciónDataGridView.Location = New System.Drawing.Point(15, 227)
+        Me.RequisiciónDataGridView.Location = New System.Drawing.Point(14, 218)
         Me.RequisiciónDataGridView.Name = "RequisiciónDataGridView"
-        Me.RequisiciónDataGridView.Size = New System.Drawing.Size(608, 195)
-        Me.RequisiciónDataGridView.TabIndex = 95
+        Me.RequisiciónDataGridView.Size = New System.Drawing.Size(636, 220)
+        Me.RequisiciónDataGridView.TabIndex = 103
         '
         'DataGridViewTextBoxColumn1
         '
@@ -465,6 +524,12 @@ Partial Class Requisicion
         Me.DataGridViewTextBoxColumn1.HeaderText = "IdRequisición"
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
         Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "IdDepartamento"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "IdDepartamento"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         '
         'DataGridViewTextBoxColumn2
         '
@@ -474,115 +539,67 @@ Partial Class Requisicion
         '
         'DataGridViewTextBoxColumn3
         '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "IdDepartamento"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "IdDepartamento"
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Observación"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Observación"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         '
         'DataGridViewTextBoxColumn4
         '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Observación"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Observación"
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "NombreProducto"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "NombreProducto"
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
         '
         'DataGridViewTextBoxColumn5
         '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "NombreProducto"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "NombreProducto"
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Cantidad"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Cantidad"
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
         '
-        'DataGridViewTextBoxColumn6
+        'Inventario_de_Bodega_UNICAHDataSet7
         '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Cantidad"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Cantidad"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.Inventario_de_Bodega_UNICAHDataSet7.DataSetName = "Inventario_de_Bodega_UNICAHDataSet7"
+        Me.Inventario_de_Bodega_UNICAHDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'FechaDateTimePicker
+        'SubfiltrodeptoBindingSource
         '
-        Me.FechaDateTimePicker.Checked = False
-        Me.FechaDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.RequisicionBindingSource, "Fecha", True))
-        Me.FechaDateTimePicker.Enabled = False
-        Me.FechaDateTimePicker.Location = New System.Drawing.Point(404, 120)
-        Me.FechaDateTimePicker.Name = "FechaDateTimePicker"
-        Me.FechaDateTimePicker.Size = New System.Drawing.Size(208, 20)
-        Me.FechaDateTimePicker.TabIndex = 96
+        Me.SubfiltrodeptoBindingSource.DataMember = "sub_filtro_depto"
+        Me.SubfiltrodeptoBindingSource.DataSource = Me.Inventario_de_Bodega_UNICAHDataSet7
         '
-        'IdDepartamentoComboBox
+        'Sub_filtro_deptoTableAdapter
         '
-        Me.IdDepartamentoComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.RequisicionBindingSource, "IdDepartamento", True))
-        Me.IdDepartamentoComboBox.DataSource = Me.SubdepartamentosselBindingSource
-        Me.IdDepartamentoComboBox.DisplayMember = "IdDepartamento"
-        Me.IdDepartamentoComboBox.Enabled = False
-        Me.IdDepartamentoComboBox.FormattingEnabled = True
-        Me.IdDepartamentoComboBox.Location = New System.Drawing.Point(112, 148)
-        Me.IdDepartamentoComboBox.Name = "IdDepartamentoComboBox"
-        Me.IdDepartamentoComboBox.Size = New System.Drawing.Size(121, 21)
-        Me.IdDepartamentoComboBox.TabIndex = 97
+        Me.Sub_filtro_deptoTableAdapter.ClearBeforeFill = True
         '
-        'ObservaciónTextBox
-        '
-        Me.ObservaciónTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.RequisicionBindingSource, "Observación", True))
-        Me.ObservaciónTextBox.Enabled = False
-        Me.ObservaciónTextBox.Location = New System.Drawing.Point(435, 151)
-        Me.ObservaciónTextBox.Name = "ObservaciónTextBox"
-        Me.ObservaciónTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.ObservaciónTextBox.TabIndex = 98
-        '
-        'NombreProductoComboBox
-        '
-        Me.NombreProductoComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.RequisicionBindingSource, "NombreProducto", True))
-        Me.NombreProductoComboBox.DataSource = Me.SubNombreProductoselBindingSource
-        Me.NombreProductoComboBox.DisplayMember = "Nombre"
-        Me.NombreProductoComboBox.Enabled = False
-        Me.NombreProductoComboBox.FormattingEnabled = True
-        Me.NombreProductoComboBox.Location = New System.Drawing.Point(112, 184)
-        Me.NombreProductoComboBox.Name = "NombreProductoComboBox"
-        Me.NombreProductoComboBox.Size = New System.Drawing.Size(121, 21)
-        Me.NombreProductoComboBox.TabIndex = 99
-        '
-        'CantidadTextBox
-        '
-        Me.CantidadTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.RequisicionBindingSource, "Cantidad", True))
-        Me.CantidadTextBox.Enabled = False
-        Me.CantidadTextBox.Location = New System.Drawing.Point(435, 187)
-        Me.CantidadTextBox.Name = "CantidadTextBox"
-        Me.CantidadTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.CantidadTextBox.TabIndex = 100
-        '
-        'Requisicion
+        'Requisicion_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkCyan
-        Me.ClientSize = New System.Drawing.Size(669, 560)
+        Me.ClientSize = New System.Drawing.Size(677, 560)
+        Me.Controls.Add(Me.RequisiciónDataGridView)
+        Me.Controls.Add(IdDepartamentoLabel)
+        Me.Controls.Add(Me.IdDepartamentoComboBox)
+        Me.Controls.Add(Me.InventarioBindingNavigator)
         Me.Controls.Add(CantidadLabel)
         Me.Controls.Add(Me.CantidadTextBox)
         Me.Controls.Add(NombreProductoLabel)
         Me.Controls.Add(Me.NombreProductoComboBox)
         Me.Controls.Add(ObservaciónLabel)
         Me.Controls.Add(Me.ObservaciónTextBox)
-        Me.Controls.Add(IdDepartamentoLabel)
-        Me.Controls.Add(Me.IdDepartamentoComboBox)
         Me.Controls.Add(FechaLabel)
         Me.Controls.Add(Me.FechaDateTimePicker)
-        Me.Controls.Add(Me.RequisiciónDataGridView)
         Me.Controls.Add(IdRequisiciónLabel)
         Me.Controls.Add(Me.IdRequisiciónTextBox)
-        Me.Controls.Add(Me.InventarioBindingNavigator)
         Me.Controls.Add(Me.GroupBoxOpciones_p)
         Me.Controls.Add(Me.BuscarButton)
         Me.Controls.Add(BuscarLabel)
         Me.Controls.Add(Me.BuscarTextBox)
         Me.Controls.Add(Me.Label_Inventario)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "Requisicion"
+        Me.Name = "Requisicion_Form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Requisicion"
         Me.GroupBoxOpciones_p.ResumeLayout(False)
         CType(Me.RequisicionBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me._Inv_Bodegas_DataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.InventarioBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.InventarioBindingNavigator.ResumeLayout(False)
-        Me.InventarioBindingNavigator.PerformLayout()
         CType(Me.InvBodegasDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Inventario_de_Bodega_UNICAHDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SubdepartamentosselBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
@@ -591,7 +608,12 @@ Partial Class Requisicion
         CType(Me.Inventario_de_Bodega_UNICAHDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Inventario_de_Bodega_UNICAHDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.InventarioBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.InventarioBindingNavigator.ResumeLayout(False)
+        Me.InventarioBindingNavigator.PerformLayout()
         CType(Me.RequisiciónDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Inventario_de_Bodega_UNICAHDataSet7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SubfiltrodeptoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -609,17 +631,6 @@ Partial Class Requisicion
     Friend WithEvents RequisicionBindingSource As BindingSource
     Friend WithEvents RequisiciónTableAdapter As _Inv_Bodegas_DataSetTableAdapters.RequisiciónTableAdapter
     Friend WithEvents TableAdapterManager As _Inv_Bodegas_DataSetTableAdapters.TableAdapterManager
-    Friend WithEvents InventarioBindingNavigator As BindingNavigator
-    Friend WithEvents BindingNavigatorCountItem As ToolStripLabel
-    Friend WithEvents BindingNavigatorMoveFirstItem As ToolStripButton
-    Friend WithEvents BindingNavigatorMovePreviousItem As ToolStripButton
-    Friend WithEvents BindingNavigatorSeparator As ToolStripSeparator
-    Friend WithEvents BindingNavigatorPositionItem As ToolStripTextBox
-    Friend WithEvents BindingNavigatorSeparator1 As ToolStripSeparator
-    Friend WithEvents BindingNavigatorMoveNextItem As ToolStripButton
-    Friend WithEvents BindingNavigatorMoveLastItem As ToolStripButton
-    Friend WithEvents BindingNavigatorSeparator2 As ToolStripSeparator
-    Friend WithEvents Cancelar_Operacion As ToolStripButton
     Friend WithEvents InvBodegasDataSetBindingSource As BindingSource
     Friend WithEvents Inventario_de_Bodega_UNICAHDataSet As Inventario_de_Bodega_UNICAHDataSet
     Friend WithEvents ProductoBindingSource As BindingSource
@@ -632,16 +643,31 @@ Partial Class Requisicion
     Friend WithEvents SubdepartamentosselBindingSource As BindingSource
     Friend WithEvents Sub_departamentos_selTableAdapter As Inventario_de_Bodega_UNICAHDataSet3TableAdapters.sub_departamentos_selTableAdapter
     Friend WithEvents IdRequisiciónTextBox As TextBox
+    Friend WithEvents FechaDateTimePicker As DateTimePicker
+    Friend WithEvents ObservaciónTextBox As TextBox
+    Friend WithEvents NombreProductoComboBox As ComboBox
+    Friend WithEvents CantidadTextBox As TextBox
+    Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
+    Friend WithEvents InventarioBindingNavigator As BindingNavigator
+    Friend WithEvents BindingNavigatorCountItem As ToolStripLabel
+    Friend WithEvents BindingNavigatorMoveFirstItem As ToolStripButton
+    Friend WithEvents BindingNavigatorMovePreviousItem As ToolStripButton
+    Friend WithEvents BindingNavigatorSeparator As ToolStripSeparator
+    Friend WithEvents BindingNavigatorPositionItem As ToolStripTextBox
+    Friend WithEvents BindingNavigatorSeparator1 As ToolStripSeparator
+    Friend WithEvents BindingNavigatorMoveNextItem As ToolStripButton
+    Friend WithEvents BindingNavigatorMoveLastItem As ToolStripButton
+    Friend WithEvents BindingNavigatorSeparator2 As ToolStripSeparator
+    Friend WithEvents Cancelar_Operacion As ToolStripButton
+    Friend WithEvents IdDepartamentoComboBox As ComboBox
     Friend WithEvents RequisiciónDataGridView As DataGridView
     Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn7 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
-    Friend WithEvents FechaDateTimePicker As DateTimePicker
-    Friend WithEvents IdDepartamentoComboBox As ComboBox
-    Friend WithEvents ObservaciónTextBox As TextBox
-    Friend WithEvents NombreProductoComboBox As ComboBox
-    Friend WithEvents CantidadTextBox As TextBox
+    Friend WithEvents Inventario_de_Bodega_UNICAHDataSet7 As Inventario_de_Bodega_UNICAHDataSet7
+    Friend WithEvents SubfiltrodeptoBindingSource As BindingSource
+    Friend WithEvents Sub_filtro_deptoTableAdapter As Inventario_de_Bodega_UNICAHDataSet7TableAdapters.sub_filtro_deptoTableAdapter
 End Class

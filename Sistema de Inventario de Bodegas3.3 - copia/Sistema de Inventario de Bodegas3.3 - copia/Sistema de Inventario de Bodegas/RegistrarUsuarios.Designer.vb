@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class RegistrarUsuarios
+Partial Class RegistrarUsuarios_Form
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -26,7 +26,7 @@ Partial Class RegistrarUsuarios
         Dim NombreLabel As System.Windows.Forms.Label
         Dim ContraseñaLabel As System.Windows.Forms.Label
         Dim ConfirmarLabel As System.Windows.Forms.Label
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RegistrarUsuarios))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RegistrarUsuarios_Form))
         Me.Agregar_Button_Usuarios = New System.Windows.Forms.Button()
         Me.Exit_Botton = New System.Windows.Forms.Button()
         Me.TitleLogin_Panel = New System.Windows.Forms.Panel()
@@ -161,6 +161,7 @@ Partial Class RegistrarUsuarios
         Me.TableAdapterManager.BodegaTableAdapter = Nothing
         Me.TableAdapterManager.DepartamentoTableAdapter = Nothing
         Me.TableAdapterManager.Detalle_SalidasTableAdapter = Nothing
+        Me.TableAdapterManager.EntradasTableAdapter = Nothing
         Me.TableAdapterManager.InventarioTableAdapter = Nothing
         Me.TableAdapterManager.ProductoTableAdapter = Nothing
         Me.TableAdapterManager.RequisiciónTableAdapter = Nothing
@@ -210,7 +211,7 @@ Partial Class RegistrarUsuarios
         Me.Guardar_Button_Requisicion.Text = "Enviar"
         Me.Guardar_Button_Requisicion.UseVisualStyleBackColor = False
         '
-        'RegistrarUsuarios
+        'RegistrarUsuarios_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -230,7 +231,7 @@ Partial Class RegistrarUsuarios
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
-        Me.Name = "RegistrarUsuarios"
+        Me.Name = "RegistrarUsuarios_Form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "RegistrarUsuarios"
         Me.TitleLogin_Panel.ResumeLayout(False)

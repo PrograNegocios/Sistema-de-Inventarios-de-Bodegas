@@ -2,7 +2,7 @@
 Imports System.Data.SqlClient
 Imports System.Data
 Imports System.Linq
-Public Class RegistrarUsuarios
+Public Class RegistrarUsuarios_Form
     Public con As New SqlConnection
     Public cmd As New SqlCommand
     Private Sub UsuariosBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) Handles Guardar_Button_Requisicion.Click

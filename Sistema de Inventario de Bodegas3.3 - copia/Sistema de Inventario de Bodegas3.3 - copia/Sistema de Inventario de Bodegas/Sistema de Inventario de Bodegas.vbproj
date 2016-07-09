@@ -62,6 +62,8 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Data" />
@@ -101,10 +103,28 @@
     <Compile Include="Departamento_Form.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DetalleEntrada_Form.Designer.vb">
+      <DependentUpon>DetalleEntrada_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleEntrada_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DetalleSalida_Form.Designer.vb">
       <DependentUpon>DetalleSalida_Form.vb</DependentUpon>
     </Compile>
     <Compile Include="DetalleSalida_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetalleSolucitud_Form.Designer.vb">
+      <DependentUpon>DetalleSolucitud_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleSolucitud_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entradas_Form.Designer.vb">
+      <DependentUpon>Entradas_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Entradas_Form.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="IngresarPersonas.Designer.vb">
@@ -151,6 +171,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Inventario_de_Bodega_UNICAHDataSet5.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Inventario_de_Bodega_UNICAHDataSet6.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Inventario_de_Bodega_UNICAHDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario_de_Bodega_UNICAHDataSet7.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Inventario_de_Bodega_UNICAHDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario_de_Bodega_UNICAHDataSet8.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Inventario_de_Bodega_UNICAHDataSet8.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Inventario_Form.Designer.vb">
       <DependentUpon>Inventario_Form.vb</DependentUpon>
     </Compile>
@@ -196,10 +231,22 @@
     <Compile Include="RegistrarUsuarios.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ReporteInventario.Designer.vb">
+      <DependentUpon>ReporteInventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteInventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Requisicion.Designer.vb">
       <DependentUpon>Requisicion.vb</DependentUpon>
     </Compile>
     <Compile Include="Requisicion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salidas_Form.Designer.vb">
+      <DependentUpon>Salidas_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Salidas_Form.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Settings.vb" />
@@ -211,8 +258,17 @@
     <EmbeddedResource Include="Departamento_Form.resx">
       <DependentUpon>Departamento_Form.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DetalleEntrada_Form.resx">
+      <DependentUpon>DetalleEntrada_Form.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DetalleSalida_Form.resx">
       <DependentUpon>DetalleSalida_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetalleSolucitud_Form.resx">
+      <DependentUpon>DetalleSolucitud_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entradas_Form.resx">
+      <DependentUpon>Entradas_Form.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IngresarPersonas.resx">
       <DependentUpon>IngresarPersonas.vb</DependentUpon>
@@ -238,8 +294,14 @@
     <EmbeddedResource Include="RegistrarUsuarios.resx">
       <DependentUpon>RegistrarUsuarios.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReporteInventario.resx">
+      <DependentUpon>ReporteInventario.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Requisicion.resx">
       <DependentUpon>Requisicion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salidas_Form.resx">
+      <DependentUpon>Salidas_Form.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -319,6 +381,39 @@
     </None>
     <None Include="Inventario_de_Bodega_UNICAHDataSet5.xss">
       <DependentUpon>Inventario_de_Bodega_UNICAHDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Inventario_de_Bodega_UNICAHDataSet6.xsc">
+      <DependentUpon>Inventario_de_Bodega_UNICAHDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Inventario_de_Bodega_UNICAHDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Inventario_de_Bodega_UNICAHDataSet6.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Inventario_de_Bodega_UNICAHDataSet6.xss">
+      <DependentUpon>Inventario_de_Bodega_UNICAHDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Inventario_de_Bodega_UNICAHDataSet7.xsc">
+      <DependentUpon>Inventario_de_Bodega_UNICAHDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Inventario_de_Bodega_UNICAHDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Inventario_de_Bodega_UNICAHDataSet7.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Inventario_de_Bodega_UNICAHDataSet7.xss">
+      <DependentUpon>Inventario_de_Bodega_UNICAHDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Inventario_de_Bodega_UNICAHDataSet8.xsc">
+      <DependentUpon>Inventario_de_Bodega_UNICAHDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Inventario_de_Bodega_UNICAHDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Inventario_de_Bodega_UNICAHDataSet8.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Inventario_de_Bodega_UNICAHDataSet8.xss">
+      <DependentUpon>Inventario_de_Bodega_UNICAHDataSet8.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>

@@ -23,6 +23,8 @@ Partial Class Inventario_Form
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim IdInventarioLabel As System.Windows.Forms.Label
+        Dim IdBodegaLabel As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Inventario_Form))
         Me._Inv_Bodegas_DataSet = New Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet()
         Me.InventarioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -30,13 +32,10 @@ Partial Class Inventario_Form
         Me.TableAdapterManager = New Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.TableAdapterManager()
         Me.Opciones_Label = New System.Windows.Forms.Label()
         Me.Salir_Button_inventario = New System.Windows.Forms.Button()
-        Me.Editar_Button_inventario = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label_Inventario = New System.Windows.Forms.Label()
         Me.InventarioBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
-        Me.Nuevo_Inventario = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
-        Me.Eliminar_Inventario = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
@@ -45,7 +44,6 @@ Partial Class Inventario_Form
         Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.Guardar_Inventario = New System.Windows.Forms.ToolStripButton()
         Me.Cancelar_Operacion = New System.Windows.Forms.ToolStripButton()
         Me.ProductoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProductoTableAdapter = New Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.ProductoTableAdapter()
@@ -59,6 +57,20 @@ Partial Class Inventario_Form
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BuscarButton = New System.Windows.Forms.Button()
+        Me.IdInventarioComboBox = New System.Windows.Forms.ComboBox()
+        Me.SubinventarioselBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Inventario_de_Bodega_UNICAHDataSet6 = New Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet6()
+        Me.Sub_inventario_selTableAdapter1 = New Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet4TableAdapters.sub_inventario_selTableAdapter()
+        Me.Sub_inventario_selTableAdapter = New Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet6TableAdapters.sub_inventario_selTableAdapter()
+        Me.IdBodegaComboBox = New System.Windows.Forms.ComboBox()
+        Me.SubfiltrobodegaselBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Inventario_de_Bodega_UNICAHDataSet8 = New Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet8()
+        Me.FiltroBodega = New System.Windows.Forms.Button()
+        Me.Sub_filtrobodega_selTableAdapter = New Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet8TableAdapters.sub_filtrobodega_selTableAdapter()
+        IdInventarioLabel = New System.Windows.Forms.Label()
+        IdBodegaLabel = New System.Windows.Forms.Label()
         CType(Me._Inv_Bodegas_DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.InventarioBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.InventarioBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -67,7 +79,29 @@ Partial Class Inventario_Form
         CType(Me.BodegaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.InventarioBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.InventarioDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SubinventarioselBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Inventario_de_Bodega_UNICAHDataSet6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SubfiltrobodegaselBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Inventario_de_Bodega_UNICAHDataSet8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'IdInventarioLabel
+        '
+        IdInventarioLabel.AutoSize = True
+        IdInventarioLabel.Location = New System.Drawing.Point(17, 96)
+        IdInventarioLabel.Name = "IdInventarioLabel"
+        IdInventarioLabel.Size = New System.Drawing.Size(69, 13)
+        IdInventarioLabel.TabIndex = 85
+        IdInventarioLabel.Text = "Id Inventario:"
+        '
+        'IdBodegaLabel
+        '
+        IdBodegaLabel.AutoSize = True
+        IdBodegaLabel.Location = New System.Drawing.Point(312, 99)
+        IdBodegaLabel.Name = "IdBodegaLabel"
+        IdBodegaLabel.Size = New System.Drawing.Size(59, 13)
+        IdBodegaLabel.TabIndex = 86
+        IdBodegaLabel.Text = "Id Bodega:"
         '
         '_Inv_Bodegas_DataSet
         '
@@ -88,19 +122,23 @@ Partial Class Inventario_Form
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.BodegaTableAdapter = Nothing
         Me.TableAdapterManager.DepartamentoTableAdapter = Nothing
+        Me.TableAdapterManager.Detalle_EntradasTableAdapter = Nothing
+        Me.TableAdapterManager.Detalle_SalidasTableAdapter = Nothing
+        Me.TableAdapterManager.EntradasTableAdapter = Nothing
         Me.TableAdapterManager.InventarioTableAdapter = Me.InventarioTableAdapter
         Me.TableAdapterManager.ProductoTableAdapter = Nothing
         Me.TableAdapterManager.RequisiciónTableAdapter = Nothing
+        Me.TableAdapterManager.SalidasTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UsuariosTableAdapter = Nothing
         '
         'Opciones_Label
         '
         Me.Opciones_Label.AutoSize = True
         Me.Opciones_Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Opciones_Label.Location = New System.Drawing.Point(13, 486)
-        Me.Opciones_Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Opciones_Label.Location = New System.Drawing.Point(10, 395)
         Me.Opciones_Label.Name = "Opciones_Label"
-        Me.Opciones_Label.Size = New System.Drawing.Size(111, 25)
+        Me.Opciones_Label.Size = New System.Drawing.Size(89, 20)
         Me.Opciones_Label.TabIndex = 29
         Me.Opciones_Label.Text = "Opciones:"
         '
@@ -110,35 +148,19 @@ Partial Class Inventario_Form
         Me.Salir_Button_inventario.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Salir_Button_inventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Salir_Button_inventario.ImageKey = "16 (Exit).ico"
-        Me.Salir_Button_inventario.Location = New System.Drawing.Point(433, 513)
-        Me.Salir_Button_inventario.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Salir_Button_inventario.Location = New System.Drawing.Point(377, 417)
         Me.Salir_Button_inventario.Name = "Salir_Button_inventario"
-        Me.Salir_Button_inventario.Size = New System.Drawing.Size(159, 58)
+        Me.Salir_Button_inventario.Size = New System.Drawing.Size(119, 47)
         Me.Salir_Button_inventario.TabIndex = 28
         Me.Salir_Button_inventario.Text = "Salir"
         Me.Salir_Button_inventario.UseVisualStyleBackColor = False
         '
-        'Editar_Button_inventario
-        '
-        Me.Editar_Button_inventario.BackColor = System.Drawing.Color.PowderBlue
-        Me.Editar_Button_inventario.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Editar_Button_inventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Editar_Button_inventario.ImageKey = "16 (Tools).ico"
-        Me.Editar_Button_inventario.Location = New System.Drawing.Point(188, 513)
-        Me.Editar_Button_inventario.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Editar_Button_inventario.Name = "Editar_Button_inventario"
-        Me.Editar_Button_inventario.Size = New System.Drawing.Size(159, 58)
-        Me.Editar_Button_inventario.TabIndex = 27
-        Me.Editar_Button_inventario.Text = "Editar"
-        Me.Editar_Button_inventario.UseVisualStyleBackColor = False
-        '
         'Label2
         '
         Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label2.Location = New System.Drawing.Point(16, 496)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(12, 403)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(769, 87)
+        Me.Label2.Size = New System.Drawing.Size(577, 71)
         Me.Label2.TabIndex = 26
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -147,58 +169,39 @@ Partial Class Inventario_Form
         Me.Label_Inventario.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label_Inventario.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label_Inventario.Location = New System.Drawing.Point(0, 0)
+        Me.Label_Inventario.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label_Inventario.Name = "Label_Inventario"
-        Me.Label_Inventario.Size = New System.Drawing.Size(841, 53)
+        Me.Label_Inventario.Size = New System.Drawing.Size(651, 43)
         Me.Label_Inventario.TabIndex = 37
         Me.Label_Inventario.Text = "Inventario"
         Me.Label_Inventario.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'InventarioBindingNavigator
         '
-        Me.InventarioBindingNavigator.AddNewItem = Me.Nuevo_Inventario
+        Me.InventarioBindingNavigator.AddNewItem = Nothing
         Me.InventarioBindingNavigator.BackColor = System.Drawing.Color.PowderBlue
         Me.InventarioBindingNavigator.BindingSource = Me.InventarioBindingSource
         Me.InventarioBindingNavigator.CountItem = Me.BindingNavigatorCountItem
-        Me.InventarioBindingNavigator.DeleteItem = Me.Eliminar_Inventario
+        Me.InventarioBindingNavigator.DeleteItem = Nothing
         Me.InventarioBindingNavigator.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.InventarioBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2, Me.Nuevo_Inventario, Me.Eliminar_Inventario, Me.Guardar_Inventario, Me.Cancelar_Operacion})
-        Me.InventarioBindingNavigator.Location = New System.Drawing.Point(0, 53)
+        Me.InventarioBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2, Me.Cancelar_Operacion})
+        Me.InventarioBindingNavigator.Location = New System.Drawing.Point(0, 43)
         Me.InventarioBindingNavigator.MoveFirstItem = Me.BindingNavigatorMoveFirstItem
         Me.InventarioBindingNavigator.MoveLastItem = Me.BindingNavigatorMoveLastItem
         Me.InventarioBindingNavigator.MoveNextItem = Me.BindingNavigatorMoveNextItem
         Me.InventarioBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.InventarioBindingNavigator.Name = "InventarioBindingNavigator"
         Me.InventarioBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.InventarioBindingNavigator.Size = New System.Drawing.Size(841, 27)
+        Me.InventarioBindingNavigator.Size = New System.Drawing.Size(651, 27)
         Me.InventarioBindingNavigator.TabIndex = 38
         Me.InventarioBindingNavigator.Text = "BindingNavigator1"
-        '
-        'Nuevo_Inventario
-        '
-        Me.Nuevo_Inventario.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.Nuevo_Inventario.Image = CType(resources.GetObject("Nuevo_Inventario.Image"), System.Drawing.Image)
-        Me.Nuevo_Inventario.Name = "Nuevo_Inventario"
-        Me.Nuevo_Inventario.RightToLeftAutoMirrorImage = True
-        Me.Nuevo_Inventario.Size = New System.Drawing.Size(24, 24)
-        Me.Nuevo_Inventario.Text = "Add new"
-        Me.Nuevo_Inventario.Visible = False
         '
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 24)
-        Me.BindingNavigatorCountItem.Text = "of {0}"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 24)
+        Me.BindingNavigatorCountItem.Text = "de {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
-        '
-        'Eliminar_Inventario
-        '
-        Me.Eliminar_Inventario.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.Eliminar_Inventario.Image = CType(resources.GetObject("Eliminar_Inventario.Image"), System.Drawing.Image)
-        Me.Eliminar_Inventario.Name = "Eliminar_Inventario"
-        Me.Eliminar_Inventario.RightToLeftAutoMirrorImage = True
-        Me.Eliminar_Inventario.Size = New System.Drawing.Size(24, 24)
-        Me.Eliminar_Inventario.Text = "Delete"
-        Me.Eliminar_Inventario.Visible = False
         '
         'BindingNavigatorMoveFirstItem
         '
@@ -228,7 +231,7 @@ Partial Class Inventario_Form
         Me.BindingNavigatorPositionItem.AccessibleName = "Position"
         Me.BindingNavigatorPositionItem.AutoSize = False
         Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(49, 27)
+        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(38, 23)
         Me.BindingNavigatorPositionItem.Text = "0"
         Me.BindingNavigatorPositionItem.ToolTipText = "Current position"
         '
@@ -259,15 +262,6 @@ Partial Class Inventario_Form
         '
         Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
         Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
-        '
-        'Guardar_Inventario
-        '
-        Me.Guardar_Inventario.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.Guardar_Inventario.Image = CType(resources.GetObject("Guardar_Inventario.Image"), System.Drawing.Image)
-        Me.Guardar_Inventario.Name = "Guardar_Inventario"
-        Me.Guardar_Inventario.Size = New System.Drawing.Size(24, 24)
-        Me.Guardar_Inventario.Text = "Save Data"
-        Me.Guardar_Inventario.Visible = False
         '
         'Cancelar_Operacion
         '
@@ -311,11 +305,10 @@ Partial Class Inventario_Form
         Me.InventarioDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.InventarioDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
         Me.InventarioDataGridView.DataSource = Me.InventarioBindingSource
-        Me.InventarioDataGridView.Location = New System.Drawing.Point(0, 119)
-        Me.InventarioDataGridView.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.InventarioDataGridView.Location = New System.Drawing.Point(0, 137)
         Me.InventarioDataGridView.Name = "InventarioDataGridView"
         Me.InventarioDataGridView.ReadOnly = True
-        Me.InventarioDataGridView.Size = New System.Drawing.Size(841, 298)
+        Me.InventarioDataGridView.Size = New System.Drawing.Size(631, 242)
         Me.InventarioDataGridView.TabIndex = 39
         '
         'DataGridViewTextBoxColumn1
@@ -360,20 +353,115 @@ Partial Class Inventario_Form
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
         Me.DataGridViewTextBoxColumn6.ReadOnly = True
         '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.PowderBlue
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button1.ImageKey = "16 (Exit).ico"
+        Me.Button1.Location = New System.Drawing.Point(155, 417)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(147, 47)
+        Me.Button1.TabIndex = 40
+        Me.Button1.Text = "Reportes"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'BuscarButton
+        '
+        Me.BuscarButton.BackgroundImage = Global.Sistema_de_Inventario_de_Bodegas.My.Resources.Resources._16__Search_
+        Me.BuscarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.BuscarButton.Location = New System.Drawing.Point(162, 92)
+        Me.BuscarButton.Name = "BuscarButton"
+        Me.BuscarButton.Size = New System.Drawing.Size(28, 23)
+        Me.BuscarButton.TabIndex = 85
+        Me.BuscarButton.UseVisualStyleBackColor = True
+        '
+        'IdInventarioComboBox
+        '
+        Me.IdInventarioComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.InventarioBindingSource1, "IdInventario", True))
+        Me.IdInventarioComboBox.DataSource = Me.SubinventarioselBindingSource
+        Me.IdInventarioComboBox.DisplayMember = "IdInventario"
+        Me.IdInventarioComboBox.FormattingEnabled = True
+        Me.IdInventarioComboBox.Location = New System.Drawing.Point(92, 93)
+        Me.IdInventarioComboBox.Name = "IdInventarioComboBox"
+        Me.IdInventarioComboBox.Size = New System.Drawing.Size(71, 21)
+        Me.IdInventarioComboBox.TabIndex = 86
+        '
+        'SubinventarioselBindingSource
+        '
+        Me.SubinventarioselBindingSource.DataMember = "sub_inventario_sel"
+        Me.SubinventarioselBindingSource.DataSource = Me.Inventario_de_Bodega_UNICAHDataSet6
+        '
+        'Inventario_de_Bodega_UNICAHDataSet6
+        '
+        Me.Inventario_de_Bodega_UNICAHDataSet6.DataSetName = "Inventario_de_Bodega_UNICAHDataSet6"
+        Me.Inventario_de_Bodega_UNICAHDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'Sub_inventario_selTableAdapter1
+        '
+        Me.Sub_inventario_selTableAdapter1.ClearBeforeFill = True
+        '
+        'Sub_inventario_selTableAdapter
+        '
+        Me.Sub_inventario_selTableAdapter.ClearBeforeFill = True
+        '
+        'IdBodegaComboBox
+        '
+        Me.IdBodegaComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.InventarioBindingSource, "IdBodega", True))
+        Me.IdBodegaComboBox.DataSource = Me.SubfiltrobodegaselBindingSource
+        Me.IdBodegaComboBox.DisplayMember = "IdBodega"
+        Me.IdBodegaComboBox.FormattingEnabled = True
+        Me.IdBodegaComboBox.Location = New System.Drawing.Point(377, 96)
+        Me.IdBodegaComboBox.Name = "IdBodegaComboBox"
+        Me.IdBodegaComboBox.Size = New System.Drawing.Size(64, 21)
+        Me.IdBodegaComboBox.TabIndex = 87
+        '
+        'SubfiltrobodegaselBindingSource
+        '
+        Me.SubfiltrobodegaselBindingSource.DataMember = "sub_filtrobodega_sel"
+        Me.SubfiltrobodegaselBindingSource.DataSource = Me.Inventario_de_Bodega_UNICAHDataSet8
+        '
+        'Inventario_de_Bodega_UNICAHDataSet8
+        '
+        Me.Inventario_de_Bodega_UNICAHDataSet8.DataSetName = "Inventario_de_Bodega_UNICAHDataSet8"
+        Me.Inventario_de_Bodega_UNICAHDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'FiltroBodega
+        '
+        Me.FiltroBodega.BackgroundImage = Global.Sistema_de_Inventario_de_Bodegas.My.Resources.Resources._16__Search_
+        Me.FiltroBodega.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.FiltroBodega.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.FiltroBodega.Location = New System.Drawing.Point(439, 95)
+        Me.FiltroBodega.Name = "FiltroBodega"
+        Me.FiltroBodega.Size = New System.Drawing.Size(28, 23)
+        Me.FiltroBodega.TabIndex = 88
+        Me.FiltroBodega.UseVisualStyleBackColor = True
+        '
+        'Sub_filtrobodega_selTableAdapter
+        '
+        Me.Sub_filtrobodega_selTableAdapter.ClearBeforeFill = True
+        '
         'Inventario_Form
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkCyan
-        Me.ClientSize = New System.Drawing.Size(841, 598)
+        Me.ClientSize = New System.Drawing.Size(651, 494)
+        Me.Controls.Add(Me.FiltroBodega)
+        Me.Controls.Add(IdBodegaLabel)
+        Me.Controls.Add(Me.IdBodegaComboBox)
+        Me.Controls.Add(IdInventarioLabel)
+        Me.Controls.Add(Me.IdInventarioComboBox)
+        Me.Controls.Add(Me.BuscarButton)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.InventarioDataGridView)
         Me.Controls.Add(Me.InventarioBindingNavigator)
         Me.Controls.Add(Me.Label_Inventario)
         Me.Controls.Add(Me.Opciones_Label)
         Me.Controls.Add(Me.Salir_Button_inventario)
-        Me.Controls.Add(Me.Editar_Button_inventario)
         Me.Controls.Add(Me.Label2)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Inventario_Form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Inventario_Form"
@@ -386,6 +474,10 @@ Partial Class Inventario_Form
         CType(Me.BodegaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.InventarioBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.InventarioDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SubinventarioselBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Inventario_de_Bodega_UNICAHDataSet6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SubfiltrobodegaselBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Inventario_de_Bodega_UNICAHDataSet8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -397,13 +489,10 @@ Partial Class Inventario_Form
     Friend WithEvents TableAdapterManager As _Inv_Bodegas_DataSetTableAdapters.TableAdapterManager
     Friend WithEvents Opciones_Label As Label
     Friend WithEvents Salir_Button_inventario As Button
-    Friend WithEvents Editar_Button_inventario As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label_Inventario As Label
     Friend WithEvents InventarioBindingNavigator As BindingNavigator
-    Friend WithEvents Nuevo_Inventario As ToolStripButton
     Friend WithEvents BindingNavigatorCountItem As ToolStripLabel
-    Friend WithEvents Eliminar_Inventario As ToolStripButton
     Friend WithEvents BindingNavigatorMoveFirstItem As ToolStripButton
     Friend WithEvents BindingNavigatorMovePreviousItem As ToolStripButton
     Friend WithEvents BindingNavigatorSeparator As ToolStripSeparator
@@ -412,7 +501,6 @@ Partial Class Inventario_Form
     Friend WithEvents BindingNavigatorMoveNextItem As ToolStripButton
     Friend WithEvents BindingNavigatorMoveLastItem As ToolStripButton
     Friend WithEvents BindingNavigatorSeparator2 As ToolStripSeparator
-    Friend WithEvents Guardar_Inventario As ToolStripButton
     Friend WithEvents Cancelar_Operacion As ToolStripButton
     Friend WithEvents ProductoBindingSource As BindingSource
     Friend WithEvents ProductoTableAdapter As _Inv_Bodegas_DataSetTableAdapters.ProductoTableAdapter
@@ -426,4 +514,16 @@ Partial Class Inventario_Form
     Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
+    Friend WithEvents Button1 As Button
+    Friend WithEvents BuscarButton As Button
+    Friend WithEvents IdInventarioComboBox As ComboBox
+    Friend WithEvents Sub_inventario_selTableAdapter1 As Inventario_de_Bodega_UNICAHDataSet4TableAdapters.sub_inventario_selTableAdapter
+    Friend WithEvents Inventario_de_Bodega_UNICAHDataSet6 As Inventario_de_Bodega_UNICAHDataSet6
+    Friend WithEvents SubinventarioselBindingSource As BindingSource
+    Friend WithEvents Sub_inventario_selTableAdapter As Inventario_de_Bodega_UNICAHDataSet6TableAdapters.sub_inventario_selTableAdapter
+    Friend WithEvents IdBodegaComboBox As ComboBox
+    Friend WithEvents FiltroBodega As Button
+    Friend WithEvents Inventario_de_Bodega_UNICAHDataSet8 As Inventario_de_Bodega_UNICAHDataSet8
+    Friend WithEvents SubfiltrobodegaselBindingSource As BindingSource
+    Friend WithEvents Sub_filtrobodega_selTableAdapter As Inventario_de_Bodega_UNICAHDataSet8TableAdapters.sub_filtrobodega_selTableAdapter
 End Class

@@ -81,4 +81,8 @@ Public Class Producto_Form
 
         End If
     End Sub
+
+    Private Sub NombreTextBox_Leave(sender As Object, e As EventArgs) Handles NombreTextBox.Leave
+
+    End Sub
 End Class

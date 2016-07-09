@@ -3,13 +3,15 @@ Imports System.Data.SqlClient
 Imports System.Data
 Imports System.Linq
 
-Public Class Requisicion
+Public Class Requisicion_Form
     Public con As New SqlConnection
     Public cmd As New SqlCommand
 
 
 
     Private Sub Requisicion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'Inventario_de_Bodega_UNICAHDataSet7.sub_filtro_depto' Puede moverla o quitarla según sea necesario.
+        Me.Sub_filtro_deptoTableAdapter.Fill(Me.Inventario_de_Bodega_UNICAHDataSet7.sub_filtro_depto)
 
         'TODO: esta línea de código carga datos en la tabla 'Inventario_de_Bodega_UNICAHDataSet3.sub_departamentos_sel' Puede moverla o quitarla según sea necesario.
         Me.Sub_departamentos_selTableAdapter.Fill(Me.Inventario_de_Bodega_UNICAHDataSet3.sub_departamentos_sel)
@@ -97,7 +99,7 @@ Public Class Requisicion
         If IdRequisiciónTextBox.Text = Nothing Then
             MsgBox("El Campo IdRequisicion no Puede quedar Vacio", vbInformation)
         ElseIf IdDepartamentoComboBox.Text = Nothing Then
-            MsgBox("El Campo IdDepartamento no Puede quedar Vacio", vbInformation)
+            MsgBox("El Campo Nombre Departamento no Puede quedar Vacio", vbInformation)
         ElseIf NombreProductoComboBox.Text = Nothing Then
             MsgBox("El Campo NombreProducto no Puede quedar Vacio", vbInformation)
         ElseIf ObservaciónTextBox.Text = Nothing Then
@@ -168,4 +170,6 @@ Public Class Requisicion
         BuscarTextBox.Text = ""
         BuscarTextBox.Focus()
     End Sub
+
+
 End Class

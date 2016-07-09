@@ -21,22 +21,7 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.RequisiciónDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
 <member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.DepartamentoDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.SalidasDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.BodegaDataTable">
 <summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -51,6 +36,36 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.BodegaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.EntradasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.Detalle_SolicitudDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.Detalle_EntradasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.RequisiciónDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.SalidasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
 <member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.InventarioRow">
 <summary>
 Represents strongly named DataRow class.
@@ -61,22 +76,7 @@ Represents strongly named DataRow class.
 Represents strongly named DataRow class.
 </summary>
 </member>
-<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.RequisiciónRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
 <member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.DepartamentoRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.SalidasRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.BodegaRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -91,6 +91,36 @@ Represents strongly named DataRow class.
 Represents strongly named DataRow class.
 </summary>
 </member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.BodegaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.EntradasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.Detalle_SolicitudRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.Detalle_EntradasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.RequisiciónRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.SalidasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
 <member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.InventarioRowChangeEvent">
 <summary>
 Row event argument class
@@ -101,22 +131,7 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
-<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.RequisiciónRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
 <member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.DepartamentoRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.SalidasRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.BodegaRowChangeEvent">
 <summary>
 Row event argument class
 </summary>
@@ -131,6 +146,36 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.BodegaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.EntradasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.Detalle_SolicitudRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.Detalle_EntradasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.RequisiciónRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet.SalidasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
 <member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.InventarioTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
@@ -141,22 +186,7 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
-<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.RequisiciónTableAdapter">
-<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member>
 <member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.DepartamentoTableAdapter">
-<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member>
-<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.SalidasTableAdapter">
-<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member>
-<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.BodegaTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -167,6 +197,36 @@ Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
 <member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.UsuariosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.BodegaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.EntradasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.Detalle_SolicitudTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.Detalle_EntradasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.RequisiciónTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.SalidasTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -597,6 +657,201 @@ Update Order Option
 </summary>
 </member>
 <member name="T:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet5TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet6">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet6.sub_inventario_selDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet6.sub_inventario_selRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet6.sub_inventario_selRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet6TableAdapters.sub_inventario_selTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet6TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet6TableAdapters.TableAdapterManager.UpdateUpdatedRows(Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet6,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet6TableAdapters.TableAdapterManager.UpdateInsertedRows(Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet6,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet6TableAdapters.TableAdapterManager.UpdateDeletedRows(Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet6,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet6TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet6TableAdapters.TableAdapterManager.UpdateAll(Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet6)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet6TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet6TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet7">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet7.sub_filtro_deptoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet7.sub_filtro_deptoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet7.sub_filtro_deptoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet7TableAdapters.sub_filtro_deptoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet7TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet7TableAdapters.TableAdapterManager.UpdateUpdatedRows(Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet7,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet7TableAdapters.TableAdapterManager.UpdateInsertedRows(Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet7,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet7TableAdapters.TableAdapterManager.UpdateDeletedRows(Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet7,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet7TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet7TableAdapters.TableAdapterManager.UpdateAll(Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet7)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet7TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet7TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet8">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet8.sub_filtrobodega_selDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet8.sub_filtrobodega_selRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet8.sub_filtrobodega_selRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet8TableAdapters.sub_filtrobodega_selTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet8TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet8TableAdapters.TableAdapterManager.UpdateUpdatedRows(Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet8,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet8TableAdapters.TableAdapterManager.UpdateInsertedRows(Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet8,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet8TableAdapters.TableAdapterManager.UpdateDeletedRows(Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet8,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet8TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet8TableAdapters.TableAdapterManager.UpdateAll(Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet8)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet8TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Sistema_de_Inventario_de_Bodegas.Inventario_de_Bodega_UNICAHDataSet8TableAdapters.TableAdapterManager.SelfReferenceComparer">
 <summary>
 Used to sort self-referenced table's rows
 </summary>

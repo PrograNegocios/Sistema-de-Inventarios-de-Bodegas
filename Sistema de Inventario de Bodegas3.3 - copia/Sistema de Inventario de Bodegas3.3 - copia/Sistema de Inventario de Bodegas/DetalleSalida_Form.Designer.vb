@@ -30,6 +30,8 @@ Partial Class DetalleSalida_Form
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DetalleSalida_Form))
         Me.Label_Inventario = New System.Windows.Forms.Label()
         Me.InventarioBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
+        Me.Detalle_SalidasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me._Inv_Bodegas_DataSet = New Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet()
         Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
@@ -41,14 +43,12 @@ Partial Class DetalleSalida_Form
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.Cancelar_Operacion = New System.Windows.Forms.ToolStripButton()
         Me.GroupBoxOpciones_p = New System.Windows.Forms.GroupBox()
-        Me.Eliminar_DetalleSalidas_Button = New System.Windows.Forms.Button()
-        Me.Agregar_Button_DetalleSalidas = New System.Windows.Forms.Button()
+        Me.Eliminar_Button_DetalleSalida = New System.Windows.Forms.Button()
+        Me.Agregar_Button_DetalleSalida = New System.Windows.Forms.Button()
         Me.Salir_Button = New System.Windows.Forms.Button()
-        Me.Guardar_Button_DetalleSalidas = New System.Windows.Forms.Button()
+        Me.Guardar_Button_DetalleSalida = New System.Windows.Forms.Button()
         Me.BuscarButton = New System.Windows.Forms.Button()
         Me.BuscarTextBox = New System.Windows.Forms.TextBox()
-        Me._Inv_Bodegas_DataSet = New Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet()
-        Me.Detalle_SalidasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TableAdapterManager = New Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.TableAdapterManager()
         Me.Detalle_SalidasTableAdapter = New Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.Detalle_SalidasTableAdapter()
         Me.IdInventarioComboBox = New System.Windows.Forms.ComboBox()
@@ -72,9 +72,9 @@ Partial Class DetalleSalida_Form
         CantidadLabel = New System.Windows.Forms.Label()
         CType(Me.InventarioBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.InventarioBindingNavigator.SuspendLayout()
-        Me.GroupBoxOpciones_p.SuspendLayout()
-        CType(Me._Inv_Bodegas_DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Detalle_SalidasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me._Inv_Bodegas_DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBoxOpciones_p.SuspendLayout()
         CType(Me.SubinventarioselBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Inventario_de_Bodega_UNICAHDataSet4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SubSalidasselBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -137,6 +137,7 @@ Partial Class DetalleSalida_Form
         '
         Me.InventarioBindingNavigator.AddNewItem = Nothing
         Me.InventarioBindingNavigator.BackColor = System.Drawing.Color.PowderBlue
+        Me.InventarioBindingNavigator.BindingSource = Me.Detalle_SalidasBindingSource
         Me.InventarioBindingNavigator.CountItem = Me.BindingNavigatorCountItem
         Me.InventarioBindingNavigator.DeleteItem = Nothing
         Me.InventarioBindingNavigator.ImageScalingSize = New System.Drawing.Size(20, 20)
@@ -151,6 +152,16 @@ Partial Class DetalleSalida_Form
         Me.InventarioBindingNavigator.Size = New System.Drawing.Size(478, 27)
         Me.InventarioBindingNavigator.TabIndex = 87
         Me.InventarioBindingNavigator.Text = "BindingNavigator1"
+        '
+        'Detalle_SalidasBindingSource
+        '
+        Me.Detalle_SalidasBindingSource.DataMember = "Detalle Salidas"
+        Me.Detalle_SalidasBindingSource.DataSource = Me._Inv_Bodegas_DataSet
+        '
+        '_Inv_Bodegas_DataSet
+        '
+        Me._Inv_Bodegas_DataSet.DataSetName = "Inv-Bodegas_DataSet"
+        Me._Inv_Bodegas_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'BindingNavigatorCountItem
         '
@@ -232,10 +243,10 @@ Partial Class DetalleSalida_Form
         '
         'GroupBoxOpciones_p
         '
-        Me.GroupBoxOpciones_p.Controls.Add(Me.Eliminar_DetalleSalidas_Button)
-        Me.GroupBoxOpciones_p.Controls.Add(Me.Agregar_Button_DetalleSalidas)
+        Me.GroupBoxOpciones_p.Controls.Add(Me.Eliminar_Button_DetalleSalida)
+        Me.GroupBoxOpciones_p.Controls.Add(Me.Agregar_Button_DetalleSalida)
         Me.GroupBoxOpciones_p.Controls.Add(Me.Salir_Button)
-        Me.GroupBoxOpciones_p.Controls.Add(Me.Guardar_Button_DetalleSalidas)
+        Me.GroupBoxOpciones_p.Controls.Add(Me.Guardar_Button_DetalleSalida)
         Me.GroupBoxOpciones_p.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBoxOpciones_p.Location = New System.Drawing.Point(29, 437)
         Me.GroupBoxOpciones_p.Name = "GroupBoxOpciones_p"
@@ -244,31 +255,31 @@ Partial Class DetalleSalida_Form
         Me.GroupBoxOpciones_p.TabStop = False
         Me.GroupBoxOpciones_p.Text = "Opciones"
         '
-        'Eliminar_DetalleSalidas_Button
+        'Eliminar_Button_DetalleSalida
         '
-        Me.Eliminar_DetalleSalidas_Button.BackColor = System.Drawing.Color.PowderBlue
-        Me.Eliminar_DetalleSalidas_Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Eliminar_DetalleSalidas_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Eliminar_DetalleSalidas_Button.ImageKey = "(ninguno)"
-        Me.Eliminar_DetalleSalidas_Button.Location = New System.Drawing.Point(226, 25)
-        Me.Eliminar_DetalleSalidas_Button.Name = "Eliminar_DetalleSalidas_Button"
-        Me.Eliminar_DetalleSalidas_Button.Size = New System.Drawing.Size(98, 47)
-        Me.Eliminar_DetalleSalidas_Button.TabIndex = 36
-        Me.Eliminar_DetalleSalidas_Button.Text = "Eliminar"
-        Me.Eliminar_DetalleSalidas_Button.UseVisualStyleBackColor = False
+        Me.Eliminar_Button_DetalleSalida.BackColor = System.Drawing.Color.PowderBlue
+        Me.Eliminar_Button_DetalleSalida.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Eliminar_Button_DetalleSalida.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Eliminar_Button_DetalleSalida.ImageKey = "(ninguno)"
+        Me.Eliminar_Button_DetalleSalida.Location = New System.Drawing.Point(226, 25)
+        Me.Eliminar_Button_DetalleSalida.Name = "Eliminar_Button_DetalleSalida"
+        Me.Eliminar_Button_DetalleSalida.Size = New System.Drawing.Size(98, 47)
+        Me.Eliminar_Button_DetalleSalida.TabIndex = 36
+        Me.Eliminar_Button_DetalleSalida.Text = "Eliminar"
+        Me.Eliminar_Button_DetalleSalida.UseVisualStyleBackColor = False
         '
-        'Agregar_Button_DetalleSalidas
+        'Agregar_Button_DetalleSalida
         '
-        Me.Agregar_Button_DetalleSalidas.BackColor = System.Drawing.Color.PowderBlue
-        Me.Agregar_Button_DetalleSalidas.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Agregar_Button_DetalleSalidas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Agregar_Button_DetalleSalidas.ImageKey = "(ninguno)"
-        Me.Agregar_Button_DetalleSalidas.Location = New System.Drawing.Point(118, 25)
-        Me.Agregar_Button_DetalleSalidas.Name = "Agregar_Button_DetalleSalidas"
-        Me.Agregar_Button_DetalleSalidas.Size = New System.Drawing.Size(102, 47)
-        Me.Agregar_Button_DetalleSalidas.TabIndex = 35
-        Me.Agregar_Button_DetalleSalidas.Text = "Agregar"
-        Me.Agregar_Button_DetalleSalidas.UseVisualStyleBackColor = False
+        Me.Agregar_Button_DetalleSalida.BackColor = System.Drawing.Color.PowderBlue
+        Me.Agregar_Button_DetalleSalida.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Agregar_Button_DetalleSalida.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Agregar_Button_DetalleSalida.ImageKey = "(ninguno)"
+        Me.Agregar_Button_DetalleSalida.Location = New System.Drawing.Point(118, 25)
+        Me.Agregar_Button_DetalleSalida.Name = "Agregar_Button_DetalleSalida"
+        Me.Agregar_Button_DetalleSalida.Size = New System.Drawing.Size(102, 47)
+        Me.Agregar_Button_DetalleSalida.TabIndex = 35
+        Me.Agregar_Button_DetalleSalida.Text = "Agregar"
+        Me.Agregar_Button_DetalleSalida.UseVisualStyleBackColor = False
         '
         'Salir_Button
         '
@@ -283,19 +294,19 @@ Partial Class DetalleSalida_Form
         Me.Salir_Button.Text = "Salir"
         Me.Salir_Button.UseVisualStyleBackColor = False
         '
-        'Guardar_Button_DetalleSalidas
+        'Guardar_Button_DetalleSalida
         '
-        Me.Guardar_Button_DetalleSalidas.BackColor = System.Drawing.Color.PowderBlue
-        Me.Guardar_Button_DetalleSalidas.Enabled = False
-        Me.Guardar_Button_DetalleSalidas.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guardar_Button_DetalleSalidas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Guardar_Button_DetalleSalidas.ImageKey = "(ninguno)"
-        Me.Guardar_Button_DetalleSalidas.Location = New System.Drawing.Point(13, 25)
-        Me.Guardar_Button_DetalleSalidas.Name = "Guardar_Button_DetalleSalidas"
-        Me.Guardar_Button_DetalleSalidas.Size = New System.Drawing.Size(99, 47)
-        Me.Guardar_Button_DetalleSalidas.TabIndex = 34
-        Me.Guardar_Button_DetalleSalidas.Text = "Guardar"
-        Me.Guardar_Button_DetalleSalidas.UseVisualStyleBackColor = False
+        Me.Guardar_Button_DetalleSalida.BackColor = System.Drawing.Color.PowderBlue
+        Me.Guardar_Button_DetalleSalida.Enabled = False
+        Me.Guardar_Button_DetalleSalida.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guardar_Button_DetalleSalida.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Guardar_Button_DetalleSalida.ImageKey = "(ninguno)"
+        Me.Guardar_Button_DetalleSalida.Location = New System.Drawing.Point(13, 25)
+        Me.Guardar_Button_DetalleSalida.Name = "Guardar_Button_DetalleSalida"
+        Me.Guardar_Button_DetalleSalida.Size = New System.Drawing.Size(99, 47)
+        Me.Guardar_Button_DetalleSalida.TabIndex = 34
+        Me.Guardar_Button_DetalleSalida.Text = "Guardar"
+        Me.Guardar_Button_DetalleSalida.UseVisualStyleBackColor = False
         '
         'BuscarButton
         '
@@ -317,27 +328,20 @@ Partial Class DetalleSalida_Form
         Me.BuscarTextBox.Size = New System.Drawing.Size(142, 21)
         Me.BuscarTextBox.TabIndex = 99
         '
-        '_Inv_Bodegas_DataSet
-        '
-        Me._Inv_Bodegas_DataSet.DataSetName = "Inv-Bodegas_DataSet"
-        Me._Inv_Bodegas_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'Detalle_SalidasBindingSource
-        '
-        Me.Detalle_SalidasBindingSource.DataMember = "Detalle Salidas"
-        Me.Detalle_SalidasBindingSource.DataSource = Me._Inv_Bodegas_DataSet
-        '
         'TableAdapterManager
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.BodegaTableAdapter = Nothing
         Me.TableAdapterManager.DepartamentoTableAdapter = Nothing
+        Me.TableAdapterManager.Detalle_EntradasTableAdapter = Nothing
         Me.TableAdapterManager.Detalle_SalidasTableAdapter = Me.Detalle_SalidasTableAdapter
+        Me.TableAdapterManager.EntradasTableAdapter = Nothing
         Me.TableAdapterManager.InventarioTableAdapter = Nothing
         Me.TableAdapterManager.ProductoTableAdapter = Nothing
         Me.TableAdapterManager.RequisiciónTableAdapter = Nothing
         Me.TableAdapterManager.SalidasTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UsuariosTableAdapter = Nothing
         '
         'Detalle_SalidasTableAdapter
         '
@@ -468,9 +472,9 @@ Partial Class DetalleSalida_Form
         CType(Me.InventarioBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.InventarioBindingNavigator.ResumeLayout(False)
         Me.InventarioBindingNavigator.PerformLayout()
-        Me.GroupBoxOpciones_p.ResumeLayout(False)
-        CType(Me._Inv_Bodegas_DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Detalle_SalidasBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me._Inv_Bodegas_DataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBoxOpciones_p.ResumeLayout(False)
         CType(Me.SubinventarioselBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Inventario_de_Bodega_UNICAHDataSet4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SubSalidasselBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
@@ -496,10 +500,10 @@ Partial Class DetalleSalida_Form
     Friend WithEvents BindingNavigatorSeparator2 As ToolStripSeparator
     Friend WithEvents Cancelar_Operacion As ToolStripButton
     Friend WithEvents GroupBoxOpciones_p As GroupBox
-    Friend WithEvents Eliminar_DetalleSalidas_Button As Button
-    Friend WithEvents Agregar_Button_DetalleSalidas As Button
+    Friend WithEvents Eliminar_Button_DetalleSalida As Button
+    Friend WithEvents Agregar_Button_DetalleSalida As Button
     Friend WithEvents Salir_Button As Button
-    Friend WithEvents Guardar_Button_DetalleSalidas As Button
+    Friend WithEvents Guardar_Button_DetalleSalida As Button
     Friend WithEvents BuscarButton As Button
     Friend WithEvents BuscarTextBox As TextBox
     Friend WithEvents _Inv_Bodegas_DataSet As _Inv_Bodegas_DataSet

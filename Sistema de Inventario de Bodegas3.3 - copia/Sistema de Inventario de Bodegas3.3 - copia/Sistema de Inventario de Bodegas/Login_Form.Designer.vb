@@ -31,8 +31,8 @@ Partial Class Login_Form
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Login_Panel = New System.Windows.Forms.Panel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.RegistrarseButton = New System.Windows.Forms.Button()
         Me.EntrarLogin = New System.Windows.Forms.Button()
+        Me.RegistrarseButton = New System.Windows.Forms.Button()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.ContraseñaTextBox = New System.Windows.Forms.TextBox()
         Me.UsuariosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -116,8 +116,8 @@ Partial Class Login_Form
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.RegistrarseButton)
         Me.GroupBox1.Controls.Add(Me.EntrarLogin)
+        Me.GroupBox1.Controls.Add(Me.RegistrarseButton)
         Me.GroupBox1.Controls.Add(Me.LinkLabel1)
         Me.GroupBox1.Controls.Add(ContraseñaLabel)
         Me.GroupBox1.Controls.Add(Me.ContraseñaTextBox)
@@ -132,6 +132,17 @@ Partial Class Login_Form
         Me.GroupBox1.TabIndex = 17
         Me.GroupBox1.TabStop = False
         '
+        'EntrarLogin
+        '
+        Me.EntrarLogin.BackColor = System.Drawing.Color.PowderBlue
+        Me.EntrarLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EntrarLogin.Location = New System.Drawing.Point(41, 129)
+        Me.EntrarLogin.Name = "EntrarLogin"
+        Me.EntrarLogin.Size = New System.Drawing.Size(70, 33)
+        Me.EntrarLogin.TabIndex = 22
+        Me.EntrarLogin.Text = "Entrar"
+        Me.EntrarLogin.UseVisualStyleBackColor = False
+        '
         'RegistrarseButton
         '
         Me.RegistrarseButton.BackColor = System.Drawing.Color.PowderBlue
@@ -142,17 +153,6 @@ Partial Class Login_Form
         Me.RegistrarseButton.TabIndex = 21
         Me.RegistrarseButton.Text = "Registrarse"
         Me.RegistrarseButton.UseVisualStyleBackColor = False
-        '
-        'EntrarLogin
-        '
-        Me.EntrarLogin.BackColor = System.Drawing.Color.PowderBlue
-        Me.EntrarLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.EntrarLogin.Location = New System.Drawing.Point(41, 129)
-        Me.EntrarLogin.Name = "EntrarLogin"
-        Me.EntrarLogin.Size = New System.Drawing.Size(70, 33)
-        Me.EntrarLogin.TabIndex = 20
-        Me.EntrarLogin.Text = "Entrar"
-        Me.EntrarLogin.UseVisualStyleBackColor = False
         '
         'LinkLabel1
         '
@@ -224,9 +224,9 @@ Partial Class Login_Form
         '
         'Login_ProgressBar
         '
-        Me.Login_ProgressBar.Location = New System.Drawing.Point(82, 286)
+        Me.Login_ProgressBar.Location = New System.Drawing.Point(82, 297)
         Me.Login_ProgressBar.Name = "Login_ProgressBar"
-        Me.Login_ProgressBar.Size = New System.Drawing.Size(222, 10)
+        Me.Login_ProgressBar.Size = New System.Drawing.Size(224, 27)
         Me.Login_ProgressBar.TabIndex = 16
         Me.Login_ProgressBar.Visible = False
         '
@@ -243,6 +243,7 @@ Partial Class Login_Form
         Me.TableAdapterManager.BodegaTableAdapter = Nothing
         Me.TableAdapterManager.DepartamentoTableAdapter = Nothing
         Me.TableAdapterManager.Detalle_SalidasTableAdapter = Nothing
+        Me.TableAdapterManager.EntradasTableAdapter = Nothing
         Me.TableAdapterManager.InventarioTableAdapter = Nothing
         Me.TableAdapterManager.ProductoTableAdapter = Nothing
         Me.TableAdapterManager.RequisiciónTableAdapter = Nothing

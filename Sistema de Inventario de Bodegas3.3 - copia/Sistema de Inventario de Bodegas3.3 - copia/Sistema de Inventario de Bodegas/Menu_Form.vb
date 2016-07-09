@@ -29,7 +29,7 @@
     End Sub
 
     Private Sub SalidasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SalidasToolStripMenuItem.Click
-        ''Salidas.Show()
+        DetalleSalida_Form.Show()
         ''Me.Hide()
     End Sub
 

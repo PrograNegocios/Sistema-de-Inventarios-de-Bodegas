@@ -29,6 +29,7 @@ Partial Class Menu_Form
         Me.DateandTime_Label = New System.Windows.Forms.Label()
         Me.MenuBorder_Label = New System.Windows.Forms.Label()
         Me.Salida_Botton = New System.Windows.Forms.Button()
+        Me.Menu_ImageList = New System.Windows.Forms.ImageList(Me.components)
         Me.Ayuda_Botton = New System.Windows.Forms.Button()
         Me.Reportes_Botton = New System.Windows.Forms.Button()
         Me.Inventario_Botton = New System.Windows.Forms.Button()
@@ -45,7 +46,6 @@ Partial Class Menu_Form
         Me.EntradasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DetalleDeEntradasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BodegasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Menu_ImageList = New System.Windows.Forms.ImageList(Me.components)
         Me.Menu_Timer = New System.Windows.Forms.Timer(Me.components)
         Me.Menu_MenuStrip.SuspendLayout()
         Me.SuspendLayout()
@@ -55,9 +55,10 @@ Partial Class Menu_Form
         Me.Username_Label.AutoSize = True
         Me.Username_Label.BackColor = System.Drawing.Color.DarkCyan
         Me.Username_Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Username_Label.Location = New System.Drawing.Point(609, 499)
+        Me.Username_Label.Location = New System.Drawing.Point(457, 405)
+        Me.Username_Label.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Username_Label.Name = "Username_Label"
-        Me.Username_Label.Size = New System.Drawing.Size(167, 18)
+        Me.Username_Label.Size = New System.Drawing.Size(139, 15)
         Me.Username_Label.TabIndex = 23
         Me.Username_Label.Text = "Nombre Usuario: Admin"
         '
@@ -65,9 +66,10 @@ Partial Class Menu_Form
         '
         Me.PCname_Label.BackColor = System.Drawing.Color.DarkCyan
         Me.PCname_Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PCname_Label.Location = New System.Drawing.Point(0, 499)
+        Me.PCname_Label.Location = New System.Drawing.Point(0, 405)
+        Me.PCname_Label.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.PCname_Label.Name = "PCname_Label"
-        Me.PCname_Label.Size = New System.Drawing.Size(172, 23)
+        Me.PCname_Label.Size = New System.Drawing.Size(129, 19)
         Me.PCname_Label.TabIndex = 22
         Me.PCname_Label.Text = "Nombre de Equipo: Host"
         '
@@ -79,9 +81,10 @@ Partial Class Menu_Form
         Me.DateandTime_Label.AutoSize = True
         Me.DateandTime_Label.BackColor = System.Drawing.Color.DarkCyan
         Me.DateandTime_Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateandTime_Label.Location = New System.Drawing.Point(296, 500)
+        Me.DateandTime_Label.Location = New System.Drawing.Point(222, 406)
+        Me.DateandTime_Label.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.DateandTime_Label.Name = "DateandTime_Label"
-        Me.DateandTime_Label.Size = New System.Drawing.Size(104, 18)
+        Me.DateandTime_Label.Size = New System.Drawing.Size(88, 15)
         Me.DateandTime_Label.TabIndex = 20
         Me.DateandTime_Label.Text = "Date and Time"
         Me.DateandTime_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -92,9 +95,10 @@ Partial Class Menu_Form
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.MenuBorder_Label.BackColor = System.Drawing.Color.DarkCyan
-        Me.MenuBorder_Label.Location = New System.Drawing.Point(0, 495)
+        Me.MenuBorder_Label.Location = New System.Drawing.Point(0, 402)
+        Me.MenuBorder_Label.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.MenuBorder_Label.Name = "MenuBorder_Label"
-        Me.MenuBorder_Label.Size = New System.Drawing.Size(798, 28)
+        Me.MenuBorder_Label.Size = New System.Drawing.Size(598, 23)
         Me.MenuBorder_Label.TabIndex = 21
         Me.MenuBorder_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -107,12 +111,23 @@ Partial Class Menu_Form
         Me.Salida_Botton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Salida_Botton.ImageKey = "16 (Cancel).ico"
         Me.Salida_Botton.ImageList = Me.Menu_ImageList
-        Me.Salida_Botton.Location = New System.Drawing.Point(674, 67)
+        Me.Salida_Botton.Location = New System.Drawing.Point(506, 54)
+        Me.Salida_Botton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Salida_Botton.Name = "Salida_Botton"
-        Me.Salida_Botton.Size = New System.Drawing.Size(123, 44)
+        Me.Salida_Botton.Size = New System.Drawing.Size(92, 36)
         Me.Salida_Botton.TabIndex = 18
         Me.Salida_Botton.Text = "Salir"
         Me.Salida_Botton.UseVisualStyleBackColor = False
+        '
+        'Menu_ImageList
+        '
+        Me.Menu_ImageList.ImageStream = CType(resources.GetObject("Menu_ImageList.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.Menu_ImageList.TransparentColor = System.Drawing.Color.Transparent
+        Me.Menu_ImageList.Images.SetKeyName(0, "16 (Address book).ico")
+        Me.Menu_ImageList.Images.SetKeyName(1, "16 (Card edit).ico")
+        Me.Menu_ImageList.Images.SetKeyName(2, "16 (Header).ico")
+        Me.Menu_ImageList.Images.SetKeyName(3, "16 (Information-2).ico")
+        Me.Menu_ImageList.Images.SetKeyName(4, "16 (Cancel).ico")
         '
         'Ayuda_Botton
         '
@@ -123,9 +138,10 @@ Partial Class Menu_Form
         Me.Ayuda_Botton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Ayuda_Botton.ImageKey = "16 (Information-2).ico"
         Me.Ayuda_Botton.ImageList = Me.Menu_ImageList
-        Me.Ayuda_Botton.Location = New System.Drawing.Point(531, 67)
+        Me.Ayuda_Botton.Location = New System.Drawing.Point(398, 54)
+        Me.Ayuda_Botton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Ayuda_Botton.Name = "Ayuda_Botton"
-        Me.Ayuda_Botton.Size = New System.Drawing.Size(137, 44)
+        Me.Ayuda_Botton.Size = New System.Drawing.Size(103, 36)
         Me.Ayuda_Botton.TabIndex = 17
         Me.Ayuda_Botton.Text = "Ayuda"
         Me.Ayuda_Botton.UseVisualStyleBackColor = False
@@ -139,9 +155,10 @@ Partial Class Menu_Form
         Me.Reportes_Botton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Reportes_Botton.ImageKey = "16 (Header).ico"
         Me.Reportes_Botton.ImageList = Me.Menu_ImageList
-        Me.Reportes_Botton.Location = New System.Drawing.Point(344, 67)
+        Me.Reportes_Botton.Location = New System.Drawing.Point(258, 54)
+        Me.Reportes_Botton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Reportes_Botton.Name = "Reportes_Botton"
-        Me.Reportes_Botton.Size = New System.Drawing.Size(181, 44)
+        Me.Reportes_Botton.Size = New System.Drawing.Size(136, 36)
         Me.Reportes_Botton.TabIndex = 16
         Me.Reportes_Botton.Text = "Reportes"
         Me.Reportes_Botton.UseVisualStyleBackColor = False
@@ -155,9 +172,10 @@ Partial Class Menu_Form
         Me.Inventario_Botton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Inventario_Botton.ImageKey = "16 (Card edit).ico"
         Me.Inventario_Botton.ImageList = Me.Menu_ImageList
-        Me.Inventario_Botton.Location = New System.Drawing.Point(159, 67)
+        Me.Inventario_Botton.Location = New System.Drawing.Point(119, 54)
+        Me.Inventario_Botton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Inventario_Botton.Name = "Inventario_Botton"
-        Me.Inventario_Botton.Size = New System.Drawing.Size(179, 44)
+        Me.Inventario_Botton.Size = New System.Drawing.Size(134, 36)
         Me.Inventario_Botton.TabIndex = 15
         Me.Inventario_Botton.Text = " Inventario"
         Me.Inventario_Botton.UseVisualStyleBackColor = False
@@ -171,9 +189,10 @@ Partial Class Menu_Form
         Me.ReqInv_Botton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.ReqInv_Botton.ImageKey = "16 (Address book).ico"
         Me.ReqInv_Botton.ImageList = Me.Menu_ImageList
-        Me.ReqInv_Botton.Location = New System.Drawing.Point(0, 67)
+        Me.ReqInv_Botton.Location = New System.Drawing.Point(0, 54)
+        Me.ReqInv_Botton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ReqInv_Botton.Name = "ReqInv_Botton"
-        Me.ReqInv_Botton.Size = New System.Drawing.Size(153, 44)
+        Me.ReqInv_Botton.Size = New System.Drawing.Size(115, 36)
         Me.ReqInv_Botton.TabIndex = 14
         Me.ReqInv_Botton.Text = "Requisición Inventario"
         Me.ReqInv_Botton.UseVisualStyleBackColor = False
@@ -185,8 +204,9 @@ Partial Class Menu_Form
         Me.MenuTitle_Label.Dock = System.Windows.Forms.DockStyle.Top
         Me.MenuTitle_Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MenuTitle_Label.Location = New System.Drawing.Point(0, 0)
+        Me.MenuTitle_Label.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.MenuTitle_Label.Name = "MenuTitle_Label"
-        Me.MenuTitle_Label.Size = New System.Drawing.Size(798, 65)
+        Me.MenuTitle_Label.Size = New System.Drawing.Size(598, 53)
         Me.MenuTitle_Label.TabIndex = 13
         Me.MenuTitle_Label.Text = "Sistema de Inventario de Bodega"
         Me.MenuTitle_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -199,9 +219,10 @@ Partial Class Menu_Form
         Me.Menu_MenuStrip.Dock = System.Windows.Forms.DockStyle.None
         Me.Menu_MenuStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.Menu_MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MantenimientoDeRequisicionesToolStripMenuItem, Me.MantenimientoDeInventarioToolStripMenuItem})
-        Me.Menu_MenuStrip.Location = New System.Drawing.Point(0, 114)
+        Me.Menu_MenuStrip.Location = New System.Drawing.Point(0, 93)
         Me.Menu_MenuStrip.Name = "Menu_MenuStrip"
-        Me.Menu_MenuStrip.Size = New System.Drawing.Size(797, 31)
+        Me.Menu_MenuStrip.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
+        Me.Menu_MenuStrip.Size = New System.Drawing.Size(598, 25)
         Me.Menu_MenuStrip.TabIndex = 19
         Me.Menu_MenuStrip.Text = "MenuStrip1"
         '
@@ -210,31 +231,34 @@ Partial Class Menu_Form
         Me.MantenimientoDeRequisicionesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DetalledERequisicionesToolStripMenuItem, Me.SalidasToolStripMenuItem, Me.DetalleDeSalidasToolStripMenuItem, Me.DepartamentosToolStripMenuItem})
         Me.MantenimientoDeRequisicionesToolStripMenuItem.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MantenimientoDeRequisicionesToolStripMenuItem.Name = "MantenimientoDeRequisicionesToolStripMenuItem"
-        Me.MantenimientoDeRequisicionesToolStripMenuItem.Size = New System.Drawing.Size(264, 27)
+        Me.MantenimientoDeRequisicionesToolStripMenuItem.Size = New System.Drawing.Size(230, 21)
         Me.MantenimientoDeRequisicionesToolStripMenuItem.Text = "Mantenimiento de Requisiciones"
         '
         'DetalledERequisicionesToolStripMenuItem
         '
+        Me.DetalledERequisicionesToolStripMenuItem.Enabled = False
         Me.DetalledERequisicionesToolStripMenuItem.Name = "DetalledERequisicionesToolStripMenuItem"
-        Me.DetalledERequisicionesToolStripMenuItem.Size = New System.Drawing.Size(227, 26)
+        Me.DetalledERequisicionesToolStripMenuItem.ShowShortcutKeys = False
+        Me.DetalledERequisicionesToolStripMenuItem.Size = New System.Drawing.Size(193, 22)
         Me.DetalledERequisicionesToolStripMenuItem.Text = "Detalle de Solicitud"
+        Me.DetalledERequisicionesToolStripMenuItem.Visible = False
         '
         'SalidasToolStripMenuItem
         '
         Me.SalidasToolStripMenuItem.Name = "SalidasToolStripMenuItem"
-        Me.SalidasToolStripMenuItem.Size = New System.Drawing.Size(227, 26)
+        Me.SalidasToolStripMenuItem.Size = New System.Drawing.Size(193, 22)
         Me.SalidasToolStripMenuItem.Text = "Salidas"
         '
         'DetalleDeSalidasToolStripMenuItem
         '
         Me.DetalleDeSalidasToolStripMenuItem.Name = "DetalleDeSalidasToolStripMenuItem"
-        Me.DetalleDeSalidasToolStripMenuItem.Size = New System.Drawing.Size(227, 26)
+        Me.DetalleDeSalidasToolStripMenuItem.Size = New System.Drawing.Size(193, 22)
         Me.DetalleDeSalidasToolStripMenuItem.Text = "Detalle de Salidas"
         '
         'DepartamentosToolStripMenuItem
         '
         Me.DepartamentosToolStripMenuItem.Name = "DepartamentosToolStripMenuItem"
-        Me.DepartamentosToolStripMenuItem.Size = New System.Drawing.Size(227, 26)
+        Me.DepartamentosToolStripMenuItem.Size = New System.Drawing.Size(193, 22)
         Me.DepartamentosToolStripMenuItem.Text = "Departamentos"
         '
         'MantenimientoDeInventarioToolStripMenuItem
@@ -242,53 +266,43 @@ Partial Class Menu_Form
         Me.MantenimientoDeInventarioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductosToolStripMenuItem, Me.EntradasToolStripMenuItem, Me.DetalleDeEntradasToolStripMenuItem, Me.BodegasToolStripMenuItem})
         Me.MantenimientoDeInventarioToolStripMenuItem.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MantenimientoDeInventarioToolStripMenuItem.Name = "MantenimientoDeInventarioToolStripMenuItem"
-        Me.MantenimientoDeInventarioToolStripMenuItem.Size = New System.Drawing.Size(231, 27)
+        Me.MantenimientoDeInventarioToolStripMenuItem.Size = New System.Drawing.Size(202, 21)
         Me.MantenimientoDeInventarioToolStripMenuItem.Text = "Mantenimiento de Inventario"
         '
         'ProductosToolStripMenuItem
         '
         Me.ProductosToolStripMenuItem.Name = "ProductosToolStripMenuItem"
-        Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(229, 26)
+        Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(201, 22)
         Me.ProductosToolStripMenuItem.Text = "Productos"
         '
         'EntradasToolStripMenuItem
         '
         Me.EntradasToolStripMenuItem.Name = "EntradasToolStripMenuItem"
-        Me.EntradasToolStripMenuItem.Size = New System.Drawing.Size(229, 26)
+        Me.EntradasToolStripMenuItem.Size = New System.Drawing.Size(201, 22)
         Me.EntradasToolStripMenuItem.Text = "Entradas"
         '
         'DetalleDeEntradasToolStripMenuItem
         '
         Me.DetalleDeEntradasToolStripMenuItem.Name = "DetalleDeEntradasToolStripMenuItem"
-        Me.DetalleDeEntradasToolStripMenuItem.Size = New System.Drawing.Size(229, 26)
+        Me.DetalleDeEntradasToolStripMenuItem.Size = New System.Drawing.Size(201, 22)
         Me.DetalleDeEntradasToolStripMenuItem.Text = "Detalle de Entradas"
         '
         'BodegasToolStripMenuItem
         '
         Me.BodegasToolStripMenuItem.Name = "BodegasToolStripMenuItem"
-        Me.BodegasToolStripMenuItem.Size = New System.Drawing.Size(229, 26)
+        Me.BodegasToolStripMenuItem.Size = New System.Drawing.Size(201, 22)
         Me.BodegasToolStripMenuItem.Text = "Bodegas"
-        '
-        'Menu_ImageList
-        '
-        Me.Menu_ImageList.ImageStream = CType(resources.GetObject("Menu_ImageList.ImageStream"), System.Windows.Forms.ImageListStreamer)
-        Me.Menu_ImageList.TransparentColor = System.Drawing.Color.Transparent
-        Me.Menu_ImageList.Images.SetKeyName(0, "16 (Address book).ico")
-        Me.Menu_ImageList.Images.SetKeyName(1, "16 (Card edit).ico")
-        Me.Menu_ImageList.Images.SetKeyName(2, "16 (Header).ico")
-        Me.Menu_ImageList.Images.SetKeyName(3, "16 (Information-2).ico")
-        Me.Menu_ImageList.Images.SetKeyName(4, "16 (Cancel).ico")
         '
         'Menu_Timer
         '
         '
         'Menu_Form
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.CadetBlue
-        Me.ClientSize = New System.Drawing.Size(798, 523)
+        Me.ClientSize = New System.Drawing.Size(598, 425)
         Me.Controls.Add(Me.Username_Label)
         Me.Controls.Add(Me.PCname_Label)
         Me.Controls.Add(Me.DateandTime_Label)
@@ -303,6 +317,7 @@ Partial Class Menu_Form
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.Menu_MenuStrip
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.MaximizeBox = False
         Me.Name = "Menu_Form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

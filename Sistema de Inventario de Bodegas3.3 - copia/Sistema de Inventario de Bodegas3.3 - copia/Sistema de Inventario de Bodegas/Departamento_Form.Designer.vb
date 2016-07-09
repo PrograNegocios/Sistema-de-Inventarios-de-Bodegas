@@ -30,6 +30,8 @@ Partial Class Departamento_Form
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Departamento_Form))
         Me.Label_Depto = New System.Windows.Forms.Label()
         Me.InventarioBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
+        Me.DepartamentoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me._Inv_Bodegas_DataSet = New Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet()
         Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
@@ -41,8 +43,6 @@ Partial Class Departamento_Form
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.Cancelar_Operacion = New System.Windows.Forms.ToolStripButton()
         Me.IdDepartamentoTextBox = New System.Windows.Forms.TextBox()
-        Me.DepartamentoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me._Inv_Bodegas_DataSet = New Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSet()
         Me.NombreTextBox = New System.Windows.Forms.TextBox()
         Me.EncargadoTextBox = New System.Windows.Forms.TextBox()
         Me.DeptoDataGridView = New System.Windows.Forms.DataGridView()
@@ -125,6 +125,7 @@ Partial Class Departamento_Form
         '
         Me.InventarioBindingNavigator.AddNewItem = Nothing
         Me.InventarioBindingNavigator.BackColor = System.Drawing.Color.PowderBlue
+        Me.InventarioBindingNavigator.BindingSource = Me.DepartamentoBindingSource
         Me.InventarioBindingNavigator.CountItem = Me.BindingNavigatorCountItem
         Me.InventarioBindingNavigator.DeleteItem = Nothing
         Me.InventarioBindingNavigator.ImageScalingSize = New System.Drawing.Size(20, 20)
@@ -139,6 +140,16 @@ Partial Class Departamento_Form
         Me.InventarioBindingNavigator.Size = New System.Drawing.Size(494, 27)
         Me.InventarioBindingNavigator.TabIndex = 87
         Me.InventarioBindingNavigator.Text = "BindingNavigator1"
+        '
+        'DepartamentoBindingSource
+        '
+        Me.DepartamentoBindingSource.DataMember = "Departamento"
+        Me.DepartamentoBindingSource.DataSource = Me._Inv_Bodegas_DataSet
+        '
+        '_Inv_Bodegas_DataSet
+        '
+        Me._Inv_Bodegas_DataSet.DataSetName = "Inv-Bodegas_DataSet"
+        Me._Inv_Bodegas_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'BindingNavigatorCountItem
         '
@@ -226,16 +237,6 @@ Partial Class Departamento_Form
         Me.IdDepartamentoTextBox.ReadOnly = True
         Me.IdDepartamentoTextBox.Size = New System.Drawing.Size(100, 20)
         Me.IdDepartamentoTextBox.TabIndex = 88
-        '
-        'DepartamentoBindingSource
-        '
-        Me.DepartamentoBindingSource.DataMember = "Departamento"
-        Me.DepartamentoBindingSource.DataSource = Me._Inv_Bodegas_DataSet
-        '
-        '_Inv_Bodegas_DataSet
-        '
-        Me._Inv_Bodegas_DataSet.DataSetName = "Inv-Bodegas_DataSet"
-        Me._Inv_Bodegas_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'NombreTextBox
         '
@@ -391,12 +392,15 @@ Partial Class Departamento_Form
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.BodegaTableAdapter = Nothing
         Me.TableAdapterManager.DepartamentoTableAdapter = Me.DepartamentoTableAdapter
+        Me.TableAdapterManager.Detalle_EntradasTableAdapter = Nothing
         Me.TableAdapterManager.Detalle_SalidasTableAdapter = Nothing
+        Me.TableAdapterManager.EntradasTableAdapter = Nothing
         Me.TableAdapterManager.InventarioTableAdapter = Nothing
         Me.TableAdapterManager.ProductoTableAdapter = Nothing
         Me.TableAdapterManager.RequisiciónTableAdapter = Nothing
         Me.TableAdapterManager.SalidasTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = Sistema_de_Inventario_de_Bodegas._Inv_Bodegas_DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UsuariosTableAdapter = Nothing
         '
         'DepartamentoTableAdapter
         '

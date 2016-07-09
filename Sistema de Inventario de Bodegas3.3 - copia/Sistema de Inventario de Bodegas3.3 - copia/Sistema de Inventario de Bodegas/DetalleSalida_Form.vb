@@ -20,13 +20,13 @@ Public Class DetalleSalida_Form
 
     End Sub
 
-    Private Sub Agregar_Button_DetalleSalidas_Click(sender As Object, e As EventArgs) Handles Agregar_Button_DetalleSalidas.Click
+    Private Sub Agregar_Button_DetalleSalidas_Click(sender As Object, e As EventArgs) Handles Agregar_Button_DetalleSalida.Click
         Detalle_SalidasBindingSource.AddNew()
-        Agregar_Button_DetalleSalidas.Enabled = False
-        Eliminar_DetalleSalidas_Button.Enabled = False
+        Agregar_Button_DetalleSalida.Enabled = False
+        Eliminar_Button_DetalleSalida.Enabled = False
         IdInventarioComboBox.Focus()
 
-        Guardar_Button_DetalleSalidas.Enabled = True
+        Guardar_Button_DetalleSalida.Enabled = True
         Cancelar_Operacion.Visible = True
         'BuscarTextBox.Enabled = True
         'BuscarButton.Enabled = True
@@ -41,7 +41,7 @@ Public Class DetalleSalida_Form
         Menu_Form.Show()
     End Sub
 
-    Private Sub Eliminar_DetalleSalidas_Button_Click(sender As Object, e As EventArgs) Handles Eliminar_DetalleSalidas_Button.Click
+    Private Sub Eliminar_DetalleSalidas_Button_Click(sender As Object, e As EventArgs) Handles Eliminar_Button_DetalleSalida.Click
         If MsgBox("Desea Eliminar el registro Seleccionado", vbYesNo) = MsgBoxResult.Yes Then
 
             Me.Validate()
@@ -53,7 +53,7 @@ Public Class DetalleSalida_Form
         End If
     End Sub
 
-    Private Sub DetalleSalidasBindingNavigatorSaveItem(sender As Object, e As EventArgs) Handles Guardar_Button_DetalleSalidas.Click
+    Private Sub DetalleSalidasBindingNavigatorSaveItem(sender As Object, e As EventArgs) Handles Guardar_Button_DetalleSalida.Click
         If IdInventarioComboBox.Text = Nothing Then
             MsgBox("El Campo IdInventario no Puede quedar Vacio", vbInformation)
         ElseIf IdSalidasComboBox.Text = Nothing Then
@@ -62,7 +62,7 @@ Public Class DetalleSalida_Form
         ElseIf (Detalle_SalidasDataGridView.Rows.Count > 0) Then
 
             MsgBox("Los datos se guardaron exitosamente", vbInformation)
-            Agregar_Button_DetalleSalidas.Enabled = True
+            Agregar_Button_DetalleSalida.Enabled = True
             Me.Validate()
             Me.Detalle_SalidasBindingSource.EndEdit()
             Me.TableAdapterManager.UpdateAll(Me._Inv_Bodegas_DataSet) 'error
@@ -85,10 +85,10 @@ Public Class DetalleSalida_Form
         IdInventarioComboBox.Enabled = False
         CantidadTextBox.Enabled = False
 
-        Guardar_Button_DetalleSalidas.Enabled = False
+        Guardar_Button_DetalleSalida.Enabled = False
         Detalle_SalidasDataGridView.Enabled = True
-        Agregar_Button_DetalleSalidas.Enabled = True
-        Eliminar_DetalleSalidas_Button.Enabled = True
+        Agregar_Button_DetalleSalida.Enabled = True
+        Eliminar_Button_DetalleSalida.Enabled = True
 
         IdSalidasComboBox.Text = ""
         IdInventarioComboBox.Text = ""

@@ -24,8 +24,9 @@ Public Class Login_Form
             Dim dr As SqlDataReader = cmd.ExecuteReader
             dr.Read()
             If dr.HasRows Then
-                Menu_Form.Show()
-                Me.Close()
+                Login_ProgressBar.Visible = True
+                Login_Timer.Start()
+
             Else
                 MsgBox("Los datos son incorrectos, Registrese o Actualice la Contraseña")
                 NombreTextBox.Text = ""
@@ -46,9 +47,12 @@ Public Class Login_Form
         'TODO: esta línea de código carga datos en la tabla '_Inv_Bodegas_DataSet.Usuarios' Puede moverla o quitarla según sea necesario.
         ' Me.UsuariosTableAdapter.Fill(Me._Inv_Bodegas_DataSet.Usuarios)
         Me.UsuariosBindingSource.ResetBindings(True)
+        GroupBox1.Focus()
+        NombreTextBox.Focus()
         ' Me.UsuariosBindingNavigatorSaveItem_Click.Refresh()
         con.ConnectionString = My.Settings.Inventario_de_Bodegas_UNICAHConnectionString
         con.Open()
+
 
     End Sub
 
@@ -69,7 +73,23 @@ Public Class Login_Form
     End Sub
 
     Private Sub RegistrarseButton_Click(sender As Object, e As EventArgs) Handles RegistrarseButton.Click
-        RegistrarUsuarios.Show()
+        RegistrarUsuarios_Form.Show()
         Me.Close()
     End Sub
+
+    Private Sub NombreTextBox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles NombreTextBox.KeyPress
+        If e.KeyChar = ChrW(Keys.Enter) Then
+            e.Handled = True
+            ContraseñaTextBox.Focus()
+
+        End If
+    End Sub
+
+    Private Sub ContraseñaTextBox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles ContraseñaTextBox.KeyPress
+        If e.KeyChar = ChrW(Keys.Enter) Then
+            e.Handled = True
+            EntrarLogin.PerformClick()
+        End If
+    End Sub
+
 End Class
